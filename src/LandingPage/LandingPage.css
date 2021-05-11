@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+#body {
+    margin: 40px 56px;
+}
+
+#nav-links {
+    font-size: 20px;
+}
+
+#brand-logo {
+    font-size: 32px;
+    font-weight: normal;
+    /* I couldn't find the font family for free */
+    /* font-family: 'Futura Round Demi'; */
+}
+
+#nav-anchor-1,
+#nav-anchor-2,
+#nav-anchor-3 {
+    color: #303031;
+    font-weight: medium;
+    /* I couldn't find the font family for free */
+    /* font-family: 'Proxima Nova'; */
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 30px;
+}
+
+#nav-anchor-4 {
+    padding-right: 0;
+    color: #71A894;
+    font-weight: bold;
+    padding-left: 0;
+    /* I couldn't find the font family for free */
+    /* font-weight: 'Proxima Nova'; */
+}
+
+#description {
+    margin-top: 100px;
+}
+
+#desc-heading {
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 0%;
+    margin-bottom: 24px;
+    color: #0B132A;
+    font-weight: normal;
+    font-family: 'Rubik', 'sans-serif';
+}
+
+#desc-paragraph {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -2%;
+    color: #4F5665;
+}
+
+#features {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+#features-text h2 {
+    font-size: 32px;
+    font-weight: medium;
+    line-height: 50px;
+    letter-spacing: 0%;
+    font-family: 'Rubik', 'sans-serif';
+    color: #0B132A;
+}
+
+#features-text p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    letter-spacing: 0%;
+    font-family: 'Rubik', 'sans-serif';
+    color: #4F5665;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
