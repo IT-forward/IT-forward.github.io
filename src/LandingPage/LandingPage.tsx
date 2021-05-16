@@ -5,13 +5,13 @@ import featuresImg from './LandingPageImages/features-img.svg';
 import { AiFillCheckCircle } from 'react-icons/ai';
 import { GoThreeBars } from 'react-icons/go';
 
+
 function LandingPage() {
     return (
         <div id="body">
             <div id="header">
                 <div className="container-xl">
                     <nav className="navbar navbar-expand-md">
-
                         <a className="navbar-brand" id="brand-logo" href="#">
                             {/* <img src={brandLogo} className="img-fluid" id="brand-logo-img" /> */}
                             <span>Pay IT Forward</span>
@@ -35,7 +35,6 @@ function LandingPage() {
                                 </li>
                             </ul>
                         </div>
-
                     </nav>
 
                     <div id="description">
