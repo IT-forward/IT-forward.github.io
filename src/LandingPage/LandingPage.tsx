@@ -4,38 +4,43 @@ import brandLogo from './LandingPageImages/Pay IT Forward logo.jpg';
 import featuresImg from './LandingPageImages/features-img.svg';
 import { AiFillCheckCircle } from 'react-icons/ai';
 import { GoThreeBars } from 'react-icons/go';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 function LandingPage() {
     return (
         <div id="body">
             <div id="header">
                 <div className="container-xl">
-                    <nav className="navbar navbar-expand-md">
-                        <a className="navbar-brand" id="brand-logo" href="#">
-                            {/* <img src={brandLogo} className="img-fluid" id="brand-logo-img" /> */}
-                            <span>Pay IT Forward</span>
-                        </a>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                            <GoThreeBars />
-                        </button>
-                        <div className="collapse navbar-collapse justify-content-end" id="navbarResponsive">
-                            <ul className="navbar-nav" id="nav-links">
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link" id="nav-anchor-1">Navigation</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link" id="nav-anchor-2">Navigation</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link" id="nav-anchor-3">Navigation</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link" id="nav-anchor-4">Navigation</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                    <Navbar collapseOnSelect expand="md" className="px-0">
+                        <Navbar.Brand href="#home" id="brand-logo">Pay IT Forward</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                        <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
+                            <Nav>
+                                <Nav.Link
+                                    href="#"
+                                    id="nav-link-1"
+                                    className="font-weight-medium px-0"
+                                >
+                                    Navigation
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="#"
+                                    id="nav-link-2"
+                                    className="font-weight-medium px-0"
+                                >
+                                    Navigation
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="#"
+                                    id="nav-link-3"
+                                    className="font-weight-bold px-0"
+                                >
+                                    Navigation
+                                </Nav.Link>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Navbar>
 
                     <div id="description">
                         <div className="row">
@@ -44,7 +49,9 @@ function LandingPage() {
                                 <p id="desc-paragraph">
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore sunt non explicabo dolorum molestias
                                 </p>
-                                <button className="btn btn-lg btn-danger" id="desc-btn">Get Started</button>
+                                <div id="btn-con">
+                                    <button className="btn btn-lg btn-danger border-0" id="desc-btn">Get Started</button>
+                                </div>
                             </div>
 
                             <div className="col-md-6" id="desc-image">
@@ -59,17 +66,17 @@ function LandingPage() {
             <div id="features">
                 <div className="container-xl">
                     <div className="row">
-                        <div className="col-md-6 " id="feature-image">
+                        <div className="col-md-6 d-flex align-items-end" id="feature-image">
                             <img src={featuresImg} className="img-fluid" alt="feature image" />
                         </div>
 
-                        <div className="col-md-6">
-                            <div id="features-desc">
-                                <h2>We Provide Many Features You Can Use</h2>
+                        <div className="col-md-6 d-flex align-items-end">
+                            <div className="ml-auto mr-auto" id="features-desc">
+                                <h2 className="font-weight-medium">We Provide Many Features You Can Use</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nisi pariatur, animi facilis quas eius quia fuga totam!
                                 </p>
-                                <ul className="list-unstyled">
+                                <ul className="list-unstyled mb-0">
                                     <li><AiFillCheckCircle className="check-circle" />feature 1</li>
                                     <li><AiFillCheckCircle className="check-circle" />feature 2</li>
                                     <li><AiFillCheckCircle className="check-circle" />feature 3</li>
@@ -85,22 +92,46 @@ function LandingPage() {
                 <div className="container-xl">
                     <div className="row align-items-center">
                         <div className="col-md-6">
-                            <div id="footer-cap">Open Enterprise</div>
+                            <div id="footer-cap" className="font-weight-bolder">Open Enterprise</div>
                         </div>
 
                         <div className="col-md-6">
                             <div className="row">
-                                <div className="col-xl-3 col-md-6 mt-3">
-                                    <a href="#" id="footer-link-1" className="text-decoration-none">Docs</a>
+                                <div className="col-xl-3 col-md-6 mt-3" id="footer-link">
+                                    <a
+                                        href="#"
+                                        id="footer-link-1"
+                                        className="text-decoration-none font-weight-medium"
+                                    >
+                                        Docs
+                                    </a>
                                 </div>
-                                <div className="col-xl-3 col-md-6 mt-3">
-                                    <a href="#" id="footer-link-2" className="text-decoration-none">GitHub</a>
+                                <div className="col-xl-3 col-md-6 mt-3" id="footer-link">
+                                    <a
+                                        href="#"
+                                        id="footer-link-2"
+                                        className="text-decoration-none font-weight-medium"
+                                    >
+                                        GitHub
+                                    </a>
                                 </div>
-                                <div className="col-xl-3 col-md-6 mt-3">
-                                    <a href="#" id="footer-link-3" className="text-decoration-none">Twitter</a>
+                                <div className="col-xl-3 col-md-6 mt-3" id="footer-link">
+                                    <a
+                                        href="#"
+                                        id="footer-link-3"
+                                        className="text-decoration-none font-weight-medium"
+                                    >
+                                        Twitter
+                                    </a>
                                 </div>
-                                <div className="col-xl-3 col-md-6 mt-3">
-                                    <a href="#" id="footer-link-4" className="text-decoration-none">Contact us</a>
+                                <div className="col-xl-3 col-md-6 mt-3" id="footer-link">
+                                    <a
+                                        href="#"
+                                        id="footer-link-4"
+                                        className="text-decoration-none font-weight-medium"
+                                    >
+                                        Contact us
+                                    </a>
                                 </div>
                             </div>
                         </div>
