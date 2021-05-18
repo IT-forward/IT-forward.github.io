@@ -15,15 +15,18 @@
 }
 
 #nav-link-1,
-#nav-link-2 {
+#nav-link-2,
+#nav-link-3 {
     color: #303031;
     margin-right: 30px;
     font-size: 20px;
 }
 
-#nav-link-3 {
+#nav-link-1:hover,
+#nav-link-2:hover,
+#nav-link-3:hover {
     color: #71A894;
-    font-size: 20px;
+    font-weight: bold;
 }
 
 #description {
@@ -60,8 +63,9 @@
 }
 
 #desc-btn:hover {
-    box-shadow: inset 250px 0 0 0 #f9e506;
-    color: #000;
+    background-color: #CA0909;
+    -webkit-box-shadow: 0px 38px 23px -7px rgba(202,9,9,0.3); 
+    box-shadow: 0px 38px 23px -7px rgba(202,9,9,0.3);
 }
 
 #features {
@@ -118,19 +122,21 @@
 
 #footer-link-1,
 #footer-link-2,
-#footer-link-3 {
+#footer-link-3,
+#footer-link-4 {
     font-size: 20px;
     line-height: 100%;
     letter-spacing: -2%;
     color: #0B132A;
 }
 
-#footer-link-4 {
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: -2%;
-    color:#71A894;
-} 
+#footer-link-1:hover,
+#footer-link-2:hover,
+#footer-link-3:hover,
+#footer-link-4:hover {
+    color: #71A894;
+    font-weight: bold;
+}
 
 @media (min-width: 861px) and (max-width: 1160px){
     #desc-heading {
@@ -271,7 +277,7 @@
     }
 
     #desc-image {
-        margin-top: 50px;
+        margin-top: 85px;
     }
 
     #btn-con {
@@ -296,5 +302,14 @@
     #footer {
         margin-top: 65px;
         text-align: center;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 450px) {
+    #desc-image,
+    #feature-image {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

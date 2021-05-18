@@ -3,7 +3,6 @@ import headerImg from './LandingPageImages/header-image.svg';
 import brandLogo from './LandingPageImages/Pay IT Forward logo.jpg';
 import featuresImg from './LandingPageImages/features-img.svg';
 import { AiFillCheckCircle } from 'react-icons/ai';
-import { GoThreeBars } from 'react-icons/go';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
@@ -34,7 +33,7 @@ function LandingPage() {
                                 <Nav.Link
                                     href="#"
                                     id="nav-link-3"
-                                    className="font-weight-bold px-0"
+                                    className="font-weight-medium mr-0 px-0"
                                 >
                                     Navigation
                                 </Nav.Link>
