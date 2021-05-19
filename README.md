@@ -51,7 +51,7 @@ Siz qo'shilgan jamoa a'zolari hamma har xil muddatda darslarni tugatishi mumkin.
 
 ## 6. Talablarimiz❗️:
 
-1. Sizda eng avvalo ichki qiziquvchanlik 🔥 va xohish kuchli bo'lishi kerak. Dasturchilikni tekin manbalardan o'rganish munkin, lekin buni birovning undovi bilan o'rganib bo'lmaydi.
+1. Sizda eng avvalo ichki qiziquvchanlik 🔥 va xohish kuchli bo'lishi kerak. Dasturchilikni tekin manbalardan o'rganish mumkin, lekin buni birovning undovi bilan o'rganib bo'lmaydi.
 2. Tekin manbalarning ko'pchiligi ingliz tilida bo'lganligi sababli, sizda **ingliz tili** 🏴󠁧󠁢󠁥󠁮󠁧󠁿 eng kamida _**pre-intermediate**_ darajasida bo'lishi kerak. **Rus tili** ham albatta asqotadi.
 3. Albatta hech bir ishga mas'uliyat 🧐 bilan qaralmasa u ish chala bo'lishi yoki umuman bo'lmasligi ham mumkin. Shuning uchun sizdan mas'ulayat ham talab qilinadi.
 4. Sabr☝️😌. Dasturchilikni hamma ham tanlamasligining eng asosiy sababi mana shu talabda. Dasturchilik bu xuddi zargarlik ishiga o'xshaydi. Uning har bir mayda detallariga e'tibor qaratmasangiz bo'lmaydi. Hatto eng qo'pol va xunuk sayt tayyorlash uchun ham eng mayda piksel, millimetrlarni hisobga olish kerak bo'ladi.
