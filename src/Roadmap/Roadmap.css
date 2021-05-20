@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+#body {
+    background-color: #fcfcfc;
+    min-height: 100vh;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.html {
+    color: #e65100;
+}
+.css {
+    color: #0277bd;
+}
+.sass {
+    color: #f06292;
+}
+.bootstrap {
+    color: #673ab7;
+}
+.netlify {
+    color: #44a3be;
+}
+.git {
+    color: #f4511e;
+}
+.github {
+    color: #383838;
+}
+.javascript {
+    color: #ffd600;
+}
+.react-js {
+    color: #37b2c6;
+}
+.redux {
+    color: #7e57c2;
+}
+.typescript {
+    color: #1976d2;
+}
+.nodejs {
+    color: #68a063;
+}
+.mongodb {
+    color: #4caf50;
+}
+.roadmap-name {
+    text-align: center;
+    font-size: 45px;
+    padding-top: 45px;
+}
+
+.roadmap-name span {
+    color: #0250e0;
+    padding: 3px;
+    
+}
+
+.image-box-1 {
+    text-align: center;
+}
+
+.image-box-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-box-group .image-box {
+    margin: 20px;
+    text-align: center;
+}
+
+.image-box-group .image-box a , .image-box-1 a {
+    text-decoration: none;
+    color: #000;   
+}
+
+p {
+    padding-top: 6px;
+    font-size: 20px;
+}
+
+.icon-group {
+    font-size: 120px;
+    transition: 0.6s;
+}
+
+.icon-group:hover {
+    transform:  scale(1.05);
+}
+
+.solid {
+    width: 250px;
+    height: 1px;
+    background-color: #000;
+}
+
+.solid-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.solid-box .solid-icon {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+}
+
+/* Responsive - Mobile version */
+
+   @media (max-width: 575.98px) { 
+    .roadmap-name {
+        font-size: 25px;
+    }
+    .solid-box .solid-icon {
+        width: 65px;
+        height: 65px;
+    }
+    .icon-group {
+        width: 65px;
+        height: 65px;
+    }
+    .solid {
+        width: 150px;
+        height: 1px;
+    }
+   
+ }
+
+@media (min-width: 368px) and (max-width: 575.98px) { 
+    .roadmap-name {
+        font-size: 25px;
+    }
+    .icon-group {
+        width: 75px;
+        height: 75px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .solid {
+        width: 100px;
+        height: 1px;
+    }
+ }
+
+  @media (max-width: 320px) { 
+    .roadmap-name {
+        font-size: 20px;
+    }
+    .icon-group {
+        width: 70px;
+        height: 70px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .solid {
+        width: 80px;
+        height: 1px;
+    }
+ }
+ 
+
