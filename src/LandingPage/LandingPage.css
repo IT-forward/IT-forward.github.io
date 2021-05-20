@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 #body {
     font-family: 'Rubik', 'sans-serif';
-}
+} */
 
 #brand-logo {
-    font-size: 32px;
-    color: #303031;
+    width: 150px;
 }
 
-#brand-logo-img {
+/* #brand-logo-img {
     width: 28px;
     border-radius: 25%;
-}
+} */
 
 #nav-link-1,
 #nav-link-2,
@@ -29,22 +28,19 @@
     font-weight: bold;
 }
 
-#description {
+/* #description {
     margin-top: 75px;
-}
+} */
 
 #desc-heading {
     font-size: 50px;
-    line-height: 55px;
-    letter-spacing: 0%;
-    margin-bottom: 22px;
+    line-height: 56px;
     color: #0B132A;
 }
 
 #desc-paragraph {
     font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -2%;
+    line-height: 30px;
     color: #4F5665;
 }
 
@@ -53,13 +49,8 @@
     height: 60px;
     background-color: #F53838;  
     border-radius: 10px;
-    box-sizing: border-box;
-    margin-top: 45px;
-    outline: none;
-    /* box-shadow: inset 0 0 0 0 #f9e506;
-    transition: ease-out 0.3s; */
-    -webkit-box-shadow: 0px 40px 37px -13px rgba(245,56,56,0.32); 
-    box-shadow: 0px 40px 37px -13px rgba(245,56,56,0.32);
+    -webkit-box-shadow: 0px 22px 29px -6px rgba(245,56,56,0.35); 
+    box-shadow: 0px 22px 29px -6px rgba(245,56,56,0.35);
 }
 
 #desc-btn:hover {
@@ -68,47 +59,44 @@
     box-shadow: 0px 38px 23px -7px rgba(202,9,9,0.3);
 }
 
-#features {
+/* #features {
     margin-top: 140px;
     margin-bottom: 140px;
-}
+} */
 
-#features-desc {
+/* #features-desc {
     width: 440px;
     height: 340px;
     margin-top: 100px;
     margin-left: 20px; 
-}
+} */
 
 #features-desc h2 {
     font-size: 32px;
-    line-height: 50px;
-    letter-spacing: 0%;
+    line-height: 42px;
     color: #0B132A;
-    width: 350px;
+    width: 70%;
 }
 
 #features-desc p {
     font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 0%;
+    line-height: 25px;
     color: #4F5665;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
 }
 
 #features-desc ul li {
     font-size: 16px;
     line-height: 28px;
-    letter-spacing: 0%;
     color: #4F5665;
 }
 
 .check-circle {
     color: #2FAB73;
-    margin-right: 12px;
 }
- 
+
+/* 
 #footer {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -213,7 +201,6 @@
     }
 
     #features-desc {
-        /* width: 440px; */
         height: 248px;
         margin-top: 0px;
         margin-left: 0px; 
@@ -222,7 +209,6 @@
     #features-desc h2 {
         font-size: 26px;
         line-height: 32px;
-        /* width: 350px; */
     }
     
     #features-desc p {
@@ -312,4 +298,4 @@
         margin-left: auto;
         margin-right: auto;
     }
-}
+} */
