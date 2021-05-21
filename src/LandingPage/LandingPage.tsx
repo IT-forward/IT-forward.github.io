@@ -3,6 +3,9 @@ import brandLogo from './LandingPageImages/brand-logo.png';
 import headerImg from './LandingPageImages/header-image.svg';
 import featuresImg from './LandingPageImages/features-img.svg';
 import { AiFillCheckCircle } from 'react-icons/ai';
+import { FaTelegram } from 'react-icons/fa';
+import { IoIosMail } from 'react-icons/io';
+import { ImFacebook2 } from 'react-icons/im';
 import { Container, Nav, Navbar, Row, Col } from "react-bootstrap";
 
 function LandingPage() {
@@ -42,6 +45,7 @@ function LandingPage() {
                 </article>
             </header>
 
+
             <section id="features">
                 <Row xs={1} sm={1} md={2}>
                     <Col id="feature-image">
@@ -66,6 +70,28 @@ function LandingPage() {
                     </Col>
                 </Row>
             </section>
+
+
+            <section id="contact-us">
+                <div className="text-center">
+                    <h2>Biz bilan bog'lanish</h2>
+                    <p className="mt-4 mb-2">
+                        Har qanday savollaringiz boʻlsa, biz bilan bogʻlaning — va biz albatta javob beramiz.
+                    </p>
+                    <Row sm={1} md={3} className="ml-auto mr-auto justify-content-between">
+                        <Col md="auto" className="px-0">
+                            <a href="https://t.me/IT_forward"><FaTelegram className="mr-2" />@IT_forward</a>
+                        </Col>
+                        <Col md="auto" className="px-0">
+                            <a href="mailto:bahriddin.abdiev@gmail.com"><IoIosMail className="mr-2" />bahriddin.abdiev@gmail.com</a>
+                        </Col>
+                        <Col md="auto" className="px-0">
+                            <a href="#"><ImFacebook2 className="mr-2" />facebook.com/Pay_IT_Forward</a>
+                        </Col>
+                    </Row>
+                </div>
+            </section>
+
 
             <footer>
                 <Row>

@@ -13,7 +13,7 @@
 #nav-link-1:hover,
 #nav-link-2:hover,
 #nav-link-3:hover {
-    color: #71A894;
+    color: #2aaf4a;
     font-weight: bold;
 }
 
@@ -55,7 +55,7 @@
 
 #features-desc h2 {
     font-size: 32px;
-    line-height: 42px;
+    line-height: 40px;
     color: #0B132A;
     width: 70%;
 }
@@ -73,9 +73,34 @@
 }
 
 .check-circle {
-    color: #2FAB73;
+    color: #2aaf4a;
 }
 
+#contact-us {
+    background-color: #fff7e0;
+    padding: 120px 0;
+}
+
+#contact-us h2 {
+    font-size: 32px;
+    line-height: 40px;
+    color: #0B132A;
+}
+
+#contact-us p {
+    font-size: 18px;
+    line-height: 25px;
+    color: #4F5665;
+}
+
+#contact-us .row {
+    width: 65%;
+}
+
+#contact-us a {
+    font-size: 18px;
+    color: #2aaf4a;
+}
 
 footer {
     margin-top: 6rem;
@@ -100,7 +125,7 @@ footer {
 #footer-link-2:hover,
 #footer-link-3:hover,
 #footer-link-4:hover {
-    color: #71A894;
+    color: #2aaf4a;
     font-weight: bold;
 }
 
@@ -133,23 +158,36 @@ footer {
     }
 
     #features-desc h2 {
-        font-size: 32px;
         line-height: 38px;
         width: 90%;
     }
     
     #features-desc p {
-        font-size: 18px;
         line-height: 24px;
     }
     
     #features-desc ul li {
-        font-size: 16px;
         line-height: 26px;
     }
 
+    #contact-us {
+        padding: 100px 0;
+    }
+
+    #contact-us h2 {
+        line-height: 38px;
+    }
+    
+    #contact-us p {
+        line-height: 24px;
+    }
+    
+    #contact-us .row {
+        width: 75%;
+    }
+
     footer {
-        margin-top: 20px;
+        margin-top: 70px;
         margin-bottom: 15px;
     }
     
@@ -206,8 +244,29 @@ footer {
     }
     
     #features-desc ul li {
-        font-size: 16px;
         line-height: 22px;
+    }
+
+    #contact-us {
+        padding: 80px 0;
+    }
+
+    #contact-us h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    
+    #contact-us p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    #contact-us .row {
+        width: 90%;
+    }
+
+    #contact-us a {
+        font-size: 16px;
     }
 
     footer {
@@ -297,13 +356,34 @@ footer {
     }
     
     #features-desc ul li {
-        font-size: 16px;
         line-height: 22px;
     }
 
+    #contact-us {
+        padding: 50px 0;
+    }
+
+    #contact-us h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    #contact-us p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    #contact-us .row {
+        width: 90%;
+    }
+
+    #contact-us a {
+        font-size: 16px;
+    }
+
     footer {
-        margin-top: 18px;
-        margin-bottom: 12px;
+        margin-top: 20px;
+        margin-bottom: 14px;
     }
     
     #footer-cap {
