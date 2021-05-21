@@ -1,17 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
-#body {
-    font-family: 'Rubik', 'sans-serif';
-} */
-
 #brand-logo {
     width: 150px;
 }
-
-/* #brand-logo-img {
-    width: 28px;
-    border-radius: 25%;
-} */
 
 #nav-link-1,
 #nav-link-2,
@@ -28,13 +17,13 @@
     font-weight: bold;
 }
 
-/* #description {
+#description {
     margin-top: 75px;
-} */
+}
 
 #desc-heading {
     font-size: 50px;
-    line-height: 56px;
+    line-height: 60px;
     color: #0B132A;
 }
 
@@ -45,8 +34,8 @@
 }
 
 #desc-btn {
-    width: 250px;
-    height: 60px;
+    width: 245px;
+    height: 55px;
     background-color: #F53838;  
     border-radius: 10px;
     -webkit-box-shadow: 0px 22px 29px -6px rgba(245,56,56,0.35); 
@@ -59,17 +48,10 @@
     box-shadow: 0px 38px 23px -7px rgba(202,9,9,0.3);
 }
 
-/* #features {
-    margin-top: 140px;
-    margin-bottom: 140px;
-} */
-
-/* #features-desc {
-    width: 440px;
-    height: 340px;
-    margin-top: 100px;
-    margin-left: 20px; 
-} */
+#features {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
 
 #features-desc h2 {
     font-size: 32px;
@@ -82,8 +64,6 @@
     font-size: 18px;
     line-height: 25px;
     color: #4F5665;
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
 }
 
 #features-desc ul li {
@@ -96,16 +76,15 @@
     color: #2FAB73;
 }
 
-/* 
-#footer {
-    margin-top: 20px;
-    margin-bottom: 40px;
+
+footer {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
 }
 
 #footer-cap {
     font-size: 24px;
     line-height: 100%;
-    letter-spacing: -4%;
 }
 
 #footer-link-1,
@@ -114,7 +93,6 @@
 #footer-link-4 {
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: -2%;
     color: #0B132A;
 }
 
@@ -126,73 +104,27 @@
     font-weight: bold;
 }
 
-@media (min-width: 861px) and (max-width: 1160px){
-    #desc-heading {
-        font-size: 34px;
-        line-height: 40px;
-        margin-bottom: 14px;
-    }
 
-    #desc-paragraph {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    #desc-btn {
-        width: 220px;
-        height: 50px;
-        font-size: 18px;
-        border-radius: 7px;
-        margin-top: 30px;
-    }
-
-    #features {
-        margin-top: 90px;
-        margin-bottom: 90px;
-    }
-
-    #features-desc {
-        width: 440px;
-        height: 278px;
-        margin-top: 0px;
-        margin-left: 0px; 
-    }
-    
-    #features-desc h2 {
-        font-size: 30px;
-        line-height: 35px;
-    }
-    
-    #features-desc p {
-        font-size: 18px;
-        line-height: 24px;
-        margin-top: 12px;
-        margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 860px){
+/* for large screens */
+@media (min-width: 992px) and (max-width: 1199px){
     #description {
         margin-top: 65px;
     }
 
     #desc-heading {
-        font-size: 30px;
-        line-height: 36px;
-        margin-bottom: 12px;
+        font-size: 45px;
+        line-height: 52px;
     }
-
+    
     #desc-paragraph {
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 20px;
+        line-height: 26px;
     }
-
+    
     #desc-btn {
-        width: 200px;
-        height: 45px;
-        font-size: 16px;
-        border-radius: 5px;
-        margin-top: 25px;
+        width: 230px;
+        height: 50px;
+        border-radius: 7px;
     }
 
     #features {
@@ -200,102 +132,188 @@
         margin-bottom: 100px;
     }
 
-    #features-desc {
-        height: 248px;
-        margin-top: 0px;
-        margin-left: 0px; 
-    }
-    
     #features-desc h2 {
-        font-size: 26px;
-        line-height: 32px;
+        font-size: 32px;
+        line-height: 38px;
+        width: 90%;
     }
     
     #features-desc p {
-        font-size: 16px;
-        line-height: 22px;
-        margin-top: 12px;
-        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 24px;
     }
     
     #features-desc ul li {
         font-size: 16px;
-        line-height: 23px;
+        line-height: 26px;
     }
 
-    #footer {
-        margin-top: 15px;
-        margin-bottom: 30px;
+    footer {
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
     
-    #footer-cap {
-        font-size: 20px;
+     #footer-cap {
+        font-size: 18px;
     }
     
     #footer-link-1,
     #footer-link-2,
-    #footer-link-3 {
-        font-size: 16px;
-    }
-    
+    #footer-link-3,
     #footer-link-4 {
         font-size: 16px;
-    } 
-
-    #footer-link {
-        margin-top: 3px;
     }
 }
 
-@media (max-width: 767px){
-    #brand-logo {
-        font-size: 30px;
-    }
 
+/* for medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
     #description {
-        margin-top: 15px;
+        margin-top: 60px;
     }
 
-    #desc-image, #feature-image {
-        width: 400px;
-        display: flex;
-        justify-content: center;
+    #desc-heading {
+        font-size: 30px;
+        line-height: 36px;
     }
-
-    #desc-image {
-        margin-top: 85px;
+    
+    #desc-paragraph {
+        font-size: 18px;
+        line-height: 22px;
     }
-
-    #btn-con {
-        display: flex;
-        justify-content: center;
+    
+    #desc-btn {
+        font-size: 16px;
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
     }
 
     #features {
-        margin-bottom: 10px;
-        margin-top: 65px;
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 
-    #features-desc, 
     #features-desc h2 {
-        width: 100%;
+        font-size: 24px;
+        line-height: 29px;
+        width: 85%;
+    }
+    
+    #features-desc p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    #features-desc ul li {
+        font-size: 16px;
+        line-height: 22px;
     }
 
-    #features-desc {
-        margin-top: 40px;
+    footer {
+        margin-top: 18px;
+        margin-bottom: 12px;
     }
-
-    #footer {
-        margin-top: 65px;
-        text-align: center;
+    
+     #footer-cap {
+        font-size: 16px;
+    }
+    
+    #footer-link-1,
+    #footer-link-2,
+    #footer-link-3,
+    #footer-link-4 {
+        font-size: 14px;
     }
 }
 
-@media (max-width: 767px) and (min-width: 450px) {
-    #desc-image,
-    #feature-image {
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
+
+/* for small screens */
+@media (max-width: 767px){
+    #nav-link-1,
+    #nav-link-2,
+    #nav-link-3 {
+        font-size: 16px;
     }
-} */
+
+    #description {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    #desc-heading {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    
+    #desc-paragraph {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    #desc-btn {
+        font-size: 16px;
+        width: 130px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    #desc-image {
+        margin-top: 40px;
+    }
+
+    #desc-image img {
+        width: 400px;
+    }
+
+    #features {
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
+    #feature-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    #feature-image img {
+        width: 400px;
+    }
+
+    #features-desc {
+        text-align: center;
+    }
+
+    #features-desc h2 {
+        font-size: 22px;
+        line-height: 26px;
+        width: 100%;
+        margin-top: 40px;
+    }
+    
+    #features-desc p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    #features-desc ul li {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    footer {
+        margin-top: 18px;
+        margin-bottom: 12px;
+    }
+    
+    #footer-cap {
+        font-size: 16px;
+    }
+    
+    #footer-link-1,
+    #footer-link-2,
+    #footer-link-3,
+    #footer-link-4 {
+        font-size: 14px;
+    }
+}
