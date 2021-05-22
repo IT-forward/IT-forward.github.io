@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Roadmap from './Roadmap/Roadmap';
-import "typeface-roboto";
+import "@fontsource/roboto";
 
 
 ReactDOM.render(

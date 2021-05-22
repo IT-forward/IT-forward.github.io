@@ -94,19 +94,19 @@ p {
     transform:  scale(1.05);
 }
 
-.solid {
+.image-box-solid {
     width: 250px;
     height: 1px;
     background-color: #000;
 }
 
-.solid-box {
+.image-box-solid-group {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.solid-box .solid-icon {
+.image-box-solid-group .image-box-solid-icon {
     border-radius: 100%;
     width: 100px;
     height: 100px;
@@ -119,7 +119,7 @@ p {
     .roadmap-name {
         font-size: 25px;
     }
-    .solid-box .solid-icon {
+    .image-box-solid-group .image-box-solid-icon {
         width: 65px;
         height: 65px;
     }
@@ -127,7 +127,7 @@ p {
         width: 65px;
         height: 65px;
     }
-    .solid {
+    .image-box-solid {
         width: 150px;
         height: 1px;
     }
@@ -145,7 +145,7 @@ p {
     p {
         font-size: 14px;
     }
-    .solid {
+    .image-box-solid {
         width: 100px;
         height: 1px;
     }
@@ -162,7 +162,7 @@ p {
     p {
         font-size: 12px;
     }
-    .solid {
+    .image-box-solid {
         width: 80px;
         height: 1px;
     }

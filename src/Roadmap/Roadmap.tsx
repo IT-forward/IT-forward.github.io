@@ -22,10 +22,10 @@ function Roadmap() {
             <h2 className="roadmap-name"><span>Pay IT forward</span> jamoasining
                  dasturlashni o'rganish xaritasi</h2>
 
-            <div className="solid-box">
-                <div className="solid"></div>
-                <FaLinux className="solid-icon" />
-                <div className="solid"></div>
+            <div className="image-box-solid-group">
+                <div className="image-box-solid"></div>
+                <FaLinux className="image-box-solid-icon" />
+                <div className="image-box-solid"></div>
             </div>
 
             <div className="image-box-1">
@@ -85,10 +85,10 @@ function Roadmap() {
                 </div>
             </div>
 
-            <div className="solid-box">
-                <div className="solid"></div>
-                <FaLinux className="solid-icon" />
-                <div className="solid"></div>
+            <div className="image-box-solid-group">
+                <div className="image-box-solid"></div>
+                <FaLinux className="image-box-solid-icon" />
+                <div className="image-box-solid"></div>
             </div>
 
             <div className="image-box-1">
