@@ -71,23 +71,28 @@ function LandingPage() {
             </section>
 
 
-            <section id="contact-us" className="p-5">
+            <section id="contact-us">
                 <div className="text-center">
                     <h2>Biz bilan bog'lanish</h2>
                     <p className="mt-4 mb-2">
                         Har qanday savollaringiz boʻlsa, biz bilan bogʻlaning — va biz albatta javob beramiz.
                     </p>
                     <Row lg={1} xl={3} className="ml-auto mr-auto justify-content-around" id="sm-links">
-                        <Col xl="auto" className="px-0">
-                            <a href="https://t.me/IT_forward" className="d-flex align-items-center">
-                                <Telegram /><span>@IT_forward</span>
-                            </a>
+                        <Col xl="auto" className="px-0 pt-2">
+                            <a
+                                href="https://t.me/IT_forward"
+                                className="d-flex align-items-center"
+                            ><Telegram />@IT_forward</a>
                         </Col>
-                        <Col xl="auto" className="px-0">
-                            <a href="mailto:bahriddin.abdiev@gmail.com"><Email />bahriddin.abdiev@gmail.com</a>
+                        <Col xl="auto" className="px-0 pt-2">
+                            <a href="mailto:bahriddin.abdiev@gmail.com"
+                                className="d-flex align-items-center"
+                            ><Email />bahriddin.abdiev@gmail.com</a>
                         </Col>
-                        <Col xl="auto" className="px-0">
-                            <a href="#"><Facebook />facebook.com/Pay_IT_Forward</a>
+                        <Col xl="auto" className="px-0 pt-2">
+                            <a href="#"
+                                className="d-flex align-items-center"
+                            ><Facebook />facebook.com/Pay_IT_Forward</a>
                         </Col>
                     </Row>
                 </div>
@@ -117,7 +122,7 @@ function LandingPage() {
                     </Col> */}
 
                     <Col sm={12} md={9} lg={9}>
-                        <Row sm={1} md={5} lg={6} className="justify-content-end text-center text-md-right">
+                        <Row xs={1} sm={1} md={5} lg={6} className="justify-content-end text-center text-md-right">
                             <Col id="footer-link">
                                 <a href="#" id="footer-link-1" className="text-decoration-none">Docs</a>
                             </Col>
