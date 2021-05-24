@@ -9,6 +9,7 @@
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
+/* Icon style */
 .html {
     color: #e65100;
 }
@@ -48,26 +49,26 @@
 .mongodb {
     color: #4caf50;
 }
+
 .roadmap-name {
     text-align: center;
     font-size: 45px;
     padding-top: 45px;
+    font-weight: 500;
 }
 
 .roadmap-name span {
-    color: #0250e0;
+    color: #000;
     padding: 3px;
+    font-weight: 700;
     
-}
-
-.image-box-1 {
-    text-align: center;
 }
 
 .image-box-group {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;   
 }
 
 .image-box-group .image-box {
@@ -75,7 +76,7 @@
     text-align: center;
 }
 
-.image-box-group .image-box a , .image-box-1 a {
+.image-box-group a , .image-box-group .image-box a  {
     text-decoration: none;
     color: #000;   
 }
@@ -134,7 +135,7 @@ p {
    
  }
 
-@media (min-width: 368px) and (max-width: 575.98px) { 
+@media (min-width: 321px) and (max-width: 575.98px) { 
     .roadmap-name {
         font-size: 25px;
     }
@@ -143,7 +144,7 @@ p {
         height: 75px;
     }
     p {
-        font-size: 14px;
+        font-size: 13px;
     }
     .image-box-solid {
         width: 100px;

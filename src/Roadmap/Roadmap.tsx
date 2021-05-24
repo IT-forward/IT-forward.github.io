@@ -19,7 +19,7 @@ import '../Roadmap/Roadmap.css';
 function Roadmap() {
     return (
         <div id="body">
-            <h2 className="roadmap-name"><span>Pay IT forward</span> jamoasining
+            <h2 className="roadmap-name"><span>Pay IT Forward</span> jamoasining
                  dasturlashni o'rganish xaritasi</h2>
 
             <div className="image-box-solid-group">
@@ -28,7 +28,7 @@ function Roadmap() {
                 <div className="image-box-solid"></div>
             </div>
 
-            <div className="image-box-1">
+            <div className="image-box-group">
                 <a href="#" target="_blank">
                     <AiFillHtml5 className="icon-group html" />
                     <p>HTML5</p>
@@ -91,7 +91,7 @@ function Roadmap() {
                 <div className="image-box-solid"></div>
             </div>
 
-            <div className="image-box-1">
+            <div className="image-box-group">
                 <a href="#" target="_blank">
                     <SiJavascript className="icon-group javascript" />
                     <p>JAVASCRIPT</p>
