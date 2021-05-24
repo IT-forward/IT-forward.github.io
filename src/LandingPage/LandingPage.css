@@ -8,6 +8,7 @@
     color: #303031;
     margin-right: 30px;
     font-size: 20px;
+    width: 110px;
 }
 
 #nav-link-1:hover,
@@ -77,8 +78,15 @@
 }
 
 #contact-us {
-    background-color: #fff7e0;
-    padding: 120px 0;
+    width: 85%;
+    margin: 50px auto;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 10px 35px 7px rgba(11,19,42,0.12); 
+    box-shadow: 0px 10px 35px 7px rgba(11,19,42,0.12);
+}
+
+#sm-links {
+    width: 90%;
 }
 
 #contact-us h2 {
@@ -93,18 +101,15 @@
     color: #4F5665;
 }
 
-#contact-us .row {
-    width: 65%;
-}
-
 #contact-us a {
     font-size: 18px;
-    color: #2aaf4a;
+    color: #4F5665;
 }
 
 footer {
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+    padding-top: 170px;
+    padding-bottom: 15px;
+    background-color: #F8F8F8;
 }
 
 #footer-cap {
