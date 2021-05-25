@@ -1,21 +1,19 @@
 #brand-logo {
-    width: 150px;
+    width: 250px;
 }
 
 #nav-link-1,
 #nav-link-2,
 #nav-link-3 {
     color: #303031;
-    margin-right: 30px;
+    margin-right: 35px;
     font-size: 20px;
-    width: 110px;
 }
 
 #nav-link-1:hover,
 #nav-link-2:hover,
 #nav-link-3:hover {
-    color: #2aaf4a;
-    font-weight: bold;
+    color: #F53838;
 }
 
 #description {
@@ -90,7 +88,7 @@
 }
 
 #contact-us #sm-links {
-    width: 90%;
+    width: 86%;
 }
 
 #contact-us h2 {
@@ -134,8 +132,7 @@ footer {
 #footer-link-2:hover,
 #footer-link-3:hover,
 #footer-link-4:hover {
-    color: #2aaf4a;
-    font-weight: bold;
+    color: #F53838;
 }
 
 
@@ -179,13 +176,12 @@ footer {
     }
 
     #contact-us {
-        width: 85%;
         padding: 50px;
         top: 140px;
     }
     
     #contact-us #sm-links {
-        width: 60%;
+        width: 94%;
     }
 
     #contact-us h2 {
@@ -216,6 +212,10 @@ footer {
 
 /* for medium screens */
 @media (min-width: 768px) and (max-width: 991px) {
+    #brand-logo {
+        width: 230px;
+    }
+
     #description {
         margin-top: 60px;
     }
@@ -257,13 +257,12 @@ footer {
     }
 
     #contact-us {
-        width: 85%;
-        padding: 45px;
+        padding: 45px 40px;
         top: 130px;
     }
     
     #contact-us #sm-links {
-        width: 60%;
+        width: 80%;
     }
 
     #contact-us h2 {
@@ -300,6 +299,10 @@ footer {
 
 /* for small screens */
 @media (max-width: 767px){
+    #brand-logo {
+        width: 210px;
+    }
+
     #nav-link-1,
     #nav-link-2,
     #nav-link-3 {
@@ -370,14 +373,12 @@ footer {
     }
 
     #contact-us {
-        width: 85%;
-        padding: 45px;
+        padding: 40px 35px;
         top: 100px;
     }
     
     #contact-us #sm-links {
-        width: 90%;
-        overflow: auto;
+        /* width: 90%; */
     }
 
     #contact-us h2 {
@@ -392,6 +393,11 @@ footer {
 
     #contact-us a {
         font-size: 16px;
+    }
+
+    #contact-us .visible-off {
+        visibility: hidden;
+        width: 0;
     }
 
     footer {
