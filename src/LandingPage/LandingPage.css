@@ -13,7 +13,7 @@
 #nav-link-1:hover,
 #nav-link-2:hover,
 #nav-link-3:hover {
-    color: #F53838;
+    color: #CA0909;
 }
 
 #description {
@@ -132,7 +132,7 @@ footer {
 #footer-link-2:hover,
 #footer-link-3:hover,
 #footer-link-4:hover {
-    color: #F53838;
+    color: #CA0909;
 }
 
 
@@ -262,7 +262,7 @@ footer {
     }
     
     #contact-us #sm-links {
-        width: 80%;
+        width: 100%;
     }
 
     #contact-us h2 {
@@ -376,10 +376,6 @@ footer {
         padding: 40px 35px;
         top: 100px;
     }
-    
-    #contact-us #sm-links {
-        /* width: 90%; */
-    }
 
     #contact-us h2 {
         font-size: 22px;
@@ -395,9 +391,8 @@ footer {
         font-size: 16px;
     }
 
-    #contact-us .visible-off {
-        visibility: hidden;
-        width: 0;
+    #contact-us .display-none {
+        display: none;
     }
 
     footer {

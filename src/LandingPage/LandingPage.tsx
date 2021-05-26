@@ -83,17 +83,17 @@ function LandingPage() {
                             <Col lg="auto" className="px-0 pt-2">
                                 <a href="https://t.me/IT_forward"
                                     className="d-flex align-items-center justify-content-center justify-content-md-start"
-                                ><Telegram /><div className="visible-off">@IT_forward</div></a>
+                                ><Telegram /><div className="display-none">@IT_forward</div></a>
                             </Col>
                             <Col lg="auto" className="px-0 pt-2">
                                 <a href="mailto:bahriddin.abdiev@gmail.com"
                                     className="d-flex align-items-center justify-content-center justify-content-md-start"
-                                ><Email /><div className="visible-off">bahriddin.abdiev@gmail.com</div></a>
+                                ><Email /><div className="display-none">bahriddin.abdiev@gmail.com</div></a>
                             </Col>
                             <Col lg="auto" className="px-0 pt-2">
                                 <a href="#"
                                     className="d-flex align-items-center justify-content-center justify-content-md-start"
-                                ><Facebook /><div className="visible-off">Pay_IT_Forward</div></a>
+                                ><Facebook /><div className="display-none">Pay_IT_Forward</div></a>
                             </Col>
                         </Row>
                     </div>
