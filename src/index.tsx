@@ -1,13 +1,5 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import Roadmap from './Roadmap/Roadmap';
-import "@fontsource/roboto";
+import LandingPage from './LandingPage/LandingPage';
+import 'bootstrap/dist/css/bootstrap.css';
 
-
-ReactDOM.render(
-  <React.StrictMode>
-    <Roadmap />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
+ReactDOM.render(<LandingPage />, document.getElementById('root'));
