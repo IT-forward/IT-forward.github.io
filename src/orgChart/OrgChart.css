@@ -1,0 +1,20 @@
+.image {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+
+.branch-box {
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to bottom, #ffffff, #ece9e6);
+  background: linear-gradient(to bottom, #ffffff, #ece9e6);
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  width: 200px;
+  color: rgb(83, 88, 88);
+}
