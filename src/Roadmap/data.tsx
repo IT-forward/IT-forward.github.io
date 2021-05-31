@@ -17,7 +17,7 @@ import { DiMongodb } from "react-icons/di";
 export const lessonsData = {
   html: {
     title: "HTML5",
-    icon: () => <AiFillHtml5 className="icon-group html" />,
+    iconComponent: <AiFillHtml5 className="icon-group html" />,
     path: "#",
     description: `
       HTML - we can
@@ -28,7 +28,7 @@ export const lessonsData = {
   },
   css: {
     title: "CSS3",
-    icon: () => <DiCss3 className="icon-group css" />,
+    iconComponent: <DiCss3 className="icon-group css" />,
     path: "#",
     description: `
       CSS - we can
@@ -39,7 +39,7 @@ export const lessonsData = {
   },
   sass: {
     title: "SASS",
-    icon: () => <DiSass className="icon-group sass" />,
+    iconComponent: <DiSass className="icon-group sass" />,
     path: "#",
     description: `
       SASS - we can
@@ -51,7 +51,7 @@ export const lessonsData = {
 
   bootstrap: {
     title: "BOOTSTRAP",
-    icon: () => <FaBootstrap className="icon-group bootstrap" />,
+    iconComponent: <FaBootstrap className="icon-group bootstrap" />,
     path: "#",
     description: `
       BOOTSTRAP - we can
@@ -62,7 +62,7 @@ export const lessonsData = {
   },
   netlify: {
     title: "NETLIFY",
-    icon: () => <SiNetlify className="icon-group netlify" />,
+    iconComponent: <SiNetlify className="icon-group netlify" />,
     path: "#",
     description: `
       NETLIFY - we can
@@ -73,7 +73,7 @@ export const lessonsData = {
   },
   git: {
     title: "GIT",
-    icon: () => <FaGitAlt className="icon-group git" />,
+    iconComponent: <FaGitAlt className="icon-group git" />,
     path: "#",
     description: `
       GIT - we can
@@ -84,7 +84,7 @@ export const lessonsData = {
   },
   github: {
     title: "GITHUB",
-    icon: () => <AiFillGithub className="icon-group github" />,
+    iconComponent: <AiFillGithub className="icon-group github" />,
     path: "#",
     description: `
       GITHUB - we can
@@ -95,7 +95,7 @@ export const lessonsData = {
   },
   codepen: {
     title: "CODEPEN",
-    icon: () => <FiCodepen className="icon-group" />,
+    iconComponent: <FiCodepen className="icon-group" />,
     path: "#",
     description: `
     CODEPEN - we can
@@ -106,7 +106,7 @@ export const lessonsData = {
   },
   javascript: {
     title: "JAVASCRIPT",
-    icon: () => <SiJavascript className="icon-group javascript" />,
+    iconComponent: <SiJavascript className="icon-group javascript" />,
     path: "#",
     description: `
     JAVASCRIPT - we can
@@ -117,7 +117,7 @@ export const lessonsData = {
   },
   reactjs: {
     title: "REACT JS",
-    icon: () => <GrReactjs className="icon-group react-js" />,
+    iconComponent: <GrReactjs className="icon-group react-js" />,
     path: "#",
     description: `
     REACT JS - we can
@@ -128,7 +128,7 @@ export const lessonsData = {
   },
   redux: {
     title: "REDUX",
-    icon: () => <SiRedux className="icon-group redux" />,
+    iconComponent: <SiRedux className="icon-group redux" />,
     path: "#",
     description: `
     REDUX - we can
@@ -139,7 +139,7 @@ export const lessonsData = {
   },
   typescript: {
     title: "TYPESCRIPT",
-    icon: () => <SiTypescript className="icon-group typescript" />,
+    iconComponent: <SiTypescript className="icon-group typescript" />,
     path: "#",
     description: `
     TYPESCRIPT - we can
@@ -150,7 +150,7 @@ export const lessonsData = {
   },
   nodejs: {
     title: "NODEJS",
-    icon: () => <GrNode className="icon-group nodejs" />,
+    iconComponent: <GrNode className="icon-group nodejs" />,
     path: "#",
     description: `
     NODEJS - we can
@@ -161,7 +161,7 @@ export const lessonsData = {
   },
   mongodb: {
     title: "MONGODB",
-    icon: () => <DiMongodb className="icon-group mongodb" />,
+    iconComponent: <DiMongodb className="icon-group mongodb" />,
     path: "#",
     description: `
     MONGODB - we can
@@ -175,7 +175,7 @@ export const lessonsData = {
 export const roadmapData = [
   {
     title: "Chapter 1",
-    icon: () => <FaLinux className="image-box-solid-icon" />,
+    iconComponent: <FaLinux className="image-box-solid-icon" />,
     children: [
       [lessonsData.html],
       [lessonsData.css, lessonsData.sass],
@@ -185,7 +185,7 @@ export const roadmapData = [
   },
   {
     title: "Chapter 2",
-    icon: () => <FaLinux className="image-box-solid-icon" />,
+    iconComponent: <FaLinux className="image-box-solid-icon" />,
     children: [
       [lessonsData.javascript],
       [lessonsData.reactjs, lessonsData.redux, lessonsData.typescript],

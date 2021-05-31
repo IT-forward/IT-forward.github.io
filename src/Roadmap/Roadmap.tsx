@@ -13,14 +13,14 @@ function Roadmap() {
       {roadmapData.map((chapter) => {
         return (
           <>
-            <Chapter icon={chapter.icon} />
+            <Chapter iconComponent={chapter.iconComponent} />
             {chapter.children.map((roadmapRow) => (
               <RoadmapRow>
                 {roadmapRow.map((lesson) => (
                   <Lesson
                     title={lesson.title}
                     path={lesson.path}
-                    icon={lesson.icon}
+                    icon={lesson.iconComponent}
                   />
                 ))}
               </RoadmapRow>

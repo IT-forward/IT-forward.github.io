@@ -1,8 +1,8 @@
-export default function Chapter({ icon }: { icon: () => JSX.Element }) {
+export default function Chapter({ iconComponent }: { iconComponent: JSX.Element }) {
   return (
     <div className="image-box-solid-group">
       <div className="image-box-solid"></div>
-      {icon()}
+      {iconComponent}
       <div className="image-box-solid"></div>
     </div>
   );

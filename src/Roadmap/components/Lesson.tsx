@@ -3,14 +3,14 @@ export default function Lesson({
   title,
   path,
 }: {
-  icon: () => JSX.Element;
+  icon: JSX.Element;
   title: string;
   path: string;
 }) {
   return (
     <div className="image-box">
       <a href={path} target="_blank" rel="noreferrer">
-        {icon()}
+        {icon}
         <p>{title}</p>
       </a>
     </div>
