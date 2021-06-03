@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { Handle } from "react-flow-renderer";
+import { Handle, Position } from "react-flow-renderer";
 import oybek from "./images/oybek.png";
 import "../OrgChart.css";
 
@@ -10,7 +10,7 @@ export default memo(() => {
         <img className={"image"} src={oybek} alt={"oybek"} />
       </div>
       <div>{"Oybek Turaev"}</div>
-      <Handle type="target" position="top" />
+      <Handle type="target" position={Position.Top} />
     </div>
   );
 });

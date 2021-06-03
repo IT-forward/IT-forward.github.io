@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { Handle } from "react-flow-renderer";
+import { Handle, Position } from "react-flow-renderer";
 import eldor from './images/eldor.png';
 import "../OrgChart.css";
 
@@ -10,7 +10,7 @@ export default memo(() => {
         <img className={"image"} src={eldor} alt={"eldor"} />
       </div>
       <div>{"Eldor Ergashov"}</div>
-      <Handle type="target" position="top" />
+      <Handle type="target" position={Position.Top} />
     </div>
   );
 });
