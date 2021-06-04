@@ -1,0 +1,21 @@
+.quote-icon {
+    font-size: 18px;
+}
+
+.testimonail-text-div {
+    padding: 25px 25px 55px 25px;
+    background-color: #FFECEC;
+}
+
+.testimonail-img-div {
+    position: relative;
+    bottom: 45px;
+    padding-left: 25px;
+}
+
+.testimonail-div img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #f8d6d6;
+}

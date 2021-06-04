@@ -59,12 +59,16 @@ function LandingPage() {
                                     <h2>We Provide Many Features You Can Use</h2>
                                     <p className="my-md-2 my-lg-3">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nisi pariatur, animi facilis quas eius quia fuga totam!
-                                </p>
+                                    </p>
                                     <ul className="list-unstyled mb-0">
-                                        <li><AiFillCheckCircle className="check-circle mr-2" />feature 1</li>
-                                        <li><AiFillCheckCircle className="check-circle mr-2" />feature 2</li>
-                                        <li><AiFillCheckCircle className="check-circle mr-2" />feature 3</li>
-                                        <li><AiFillCheckCircle className="check-circle mr-2" />feature 4</li>
+                                        <li className="d-flex align-items-center">
+                                            <AiFillCheckCircle className="check-circle mr-2" />feature 1</li>
+                                        <li className="d-flex align-items-center">
+                                            <AiFillCheckCircle className="check-circle mr-2" />feature 2</li>
+                                        <li className="d-flex align-items-center">
+                                            <AiFillCheckCircle className="check-circle mr-2" />feature 3</li>
+                                        <li className="d-flex align-items-center">
+                                            <AiFillCheckCircle className="check-circle mr-2" />feature 4</li>
                                     </ul>
                                 </Col>
                             </Row>

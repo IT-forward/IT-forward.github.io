@@ -1,0 +1,143 @@
+#account {
+    color: #4F5665;
+}
+
+#acc-header img {
+    width: 350px;
+    height: 380px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+#acc-header h1 {
+    color: #0B132A;
+}
+
+#acc-header h3 {
+    color: #737A84;
+}
+
+.acc-info {
+    margin-bottom: 3px;
+}
+
+.acc-info span {
+    color: #F53838;
+}
+
+#students {
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 60px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 4px 17px 4px rgba(0,0,0,0.15); 
+    box-shadow: 0px 4px 17px 4px rgba(0,0,0,0.15);
+}
+
+.w-33 {
+    border-right: 2px solid #EEEFF2;
+}
+
+#students .number {
+    font-size: 20px;
+    line-height: 21px;
+    color: #0B132A;
+}
+
+.hr-line {
+    color: #0B132A;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hr-line hr {
+    width: 130px;
+    height: 1px;
+    margin: 0;
+    margin-bottom: 4px;
+    margin-left: 12px;
+    display: inline-block;
+    background-color: #2FAB73;
+}
+
+.skill-name {
+    font-size: 14px;
+    color: #0B132A;
+}
+
+.bg-green-bar {
+    background-color: #2FAB73 !important;
+}
+
+#projects .project {
+    background-color: lightslategray;
+}
+
+/* for large screens */
+@media (min-width: 992px) {
+    #account {
+        font-size: 18px;
+    }
+
+    .acc-info {
+        margin-bottom: 6px;
+    }
+
+    #students {
+        width: 90%;
+    }
+}
+
+
+/* for medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .w-330 {
+        height: 332px;
+    }
+
+    #acc-header img {
+        width: 300px;
+        height: 330px;
+        border-radius: 5px;
+    }
+
+    #acc-header h1 {
+        font-size: 36px;
+    }
+
+    #acc-header h3 {     
+        font-size: 26px;
+    }
+
+    #students {
+        margin: 10px auto;
+    }
+}
+
+
+/* for small screens */
+@media (max-width: 767px) {
+    #acc-header img {
+        width: 300px;
+        height: 320px;
+        border-radius: 5px;
+    }
+
+    #acc-header h1 {
+        font-size: 36px;
+    }
+
+    #acc-header h3 {     
+        font-size: 26px;
+    }
+
+    #students {
+        width: 80%;
+    }
+
+    .w-33 {
+        border-right: none;
+        border-bottom: 2px solid #EEEFF2;
+    }
+}

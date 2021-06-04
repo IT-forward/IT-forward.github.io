@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
-import LandingPage from './LandingPage/LandingPage';
+// import LandingPage from './LandingPage/LandingPage';
+import MemberAccount from './memberAccounts/MemberAccount';
 import 'bootstrap/dist/css/bootstrap.css';
 
-ReactDOM.render(<LandingPage />, document.getElementById('root'));
+ReactDOM.render(<MemberAccount />, document.getElementById('root'));
