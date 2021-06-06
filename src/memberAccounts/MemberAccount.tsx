@@ -74,29 +74,47 @@ function MemberAccount() {
             </Row>
 
             <Row xs={1} md={2} id="skills" className="mb-5">
-                <Col className="my-2">
-                    <div className="skill-name font-weight-bold">HTML</div>
-                    <ProgressBar now={77} variant={"green-bar"} />
+                <Col className="my-1">
+                    <div className="d-flex align-items-center  justify-content-between">
+                        <div className="skill-name font-weight-bold">HTML</div>
+                        <div>level</div>
+                    </div>
+                    <ProgressBar now={77} variant={"green-bar"} className="progress-thiner" />
                 </Col>
-                <Col className="my-2">
-                    <div className="skill-name font-weight-bold">CSS</div>
-                    <ProgressBar now={60} variant={"green-bar"} />
+                <Col className="my-1">
+                    <div className="d-flex align-items-center  justify-content-between">
+                        <div className="skill-name font-weight-bold">CSS</div>
+                        <div>level</div>
+                    </div>
+                    <ProgressBar now={60} variant={"green-bar"} className="progress-thiner" />
                 </Col>
-                <Col className="my-2">
-                    <div className="skill-name font-weight-bold">JAVASCRIPT</div>
-                    <ProgressBar now={74} variant={"green-bar"} />
+                <Col className="my-1">
+                    <div className="d-flex align-items-center  justify-content-between">
+                        <div className="skill-name font-weight-bold">JAVASCRIPT</div>
+                        <div>level</div>
+                    </div>
+                    <ProgressBar now={74} variant={"green-bar"} className="progress-thiner" />
                 </Col>
-                <Col className="my-2">
-                    <div className="skill-name font-weight-bold">BOOTSTRAP</div>
-                    <ProgressBar now={55} variant={"green-bar"} />
+                <Col className="my-1">
+                    <div className="d-flex align-items-center  justify-content-between">
+                        <div className="skill-name font-weight-bold">BOOTSTRAP</div>
+                        <div>level</div>
+                    </div>
+                    <ProgressBar now={55} variant={"green-bar"} className="progress-thiner" />
                 </Col>
-                <Col className="my-2">
-                    <div className="skill-name font-weight-bold">REACT JS</div>
-                    <ProgressBar now={63} variant={"green-bar"} />
+                <Col className="my-1">
+                    <div className="d-flex align-items-center  justify-content-between">
+                        <div className="skill-name font-weight-bold">REACT JS</div>
+                        <div>level</div>
+                    </div>
+                    <ProgressBar now={63} variant={"green-bar"} className="progress-thiner" />
                 </Col>
-                <Col className="my-2">
-                    <div className="skill-name font-weight-bold">REDUX</div>
-                    <ProgressBar now={34} variant={"green-bar"} />
+                <Col className="my-1">
+                    <div className="d-flex align-items-center  justify-content-between">
+                        <div className="skill-name font-weight-bold">REDUX</div>
+                        <div>level</div>
+                    </div>
+                    <ProgressBar now={34} variant={"green-bar"} className="progress-thiner" />
                 </Col>
             </Row>
 
