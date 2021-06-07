@@ -9,7 +9,7 @@ export default memo(
           <img className={"image"} src={data.image} alt={data.fullName} />
         </div>
         <div>{data.fullName}</div>
-        <Handle type="source" position={Position.Bottom} />
+        <Handle type="target" position={Position.Top} />
       </div>
     );
   }
