@@ -5,16 +5,16 @@ import MentorMenteeNode from "./customNodes/MentorMenteeNode";
 import { treeData } from "./treeData";
 import "./OrgChart.css";
 
-const positionX = 300;
-const positionY = 300;
+const bottomLeftX = 300;
+const bottomLeftY = 300;
 
 const nodes = [
   {
     id: `${treeData.id}`,
     type: "mentor",
     position: {
-      x: (positionX + treeData.students.length * 300) / 2,
-      y: positionY - 250,
+      x: (bottomLeftX + treeData.students.length * 300) / 2,
+      y: bottomLeftY - 250,
     },
     data: { fullName: treeData.fullName, image: treeData.image },
   },
@@ -25,7 +25,7 @@ const nodes = [
         student.students && student.students.length > 0
           ? "mentorMentee"
           : "mentee",
-      position: { x: positionX + index * 300, y: positionY },
+      position: { x: bottomLeftX + index * 300, y: bottomLeftY },
       data: { fullName: student.fullName, image: student.image },
     };
   }),
