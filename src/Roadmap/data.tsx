@@ -13,161 +13,216 @@ import { SiRedux } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { GrNode } from "react-icons/gr";
 import { DiMongodb } from "react-icons/di";
+import HTML from "./course-images/html.png";
+import CSS from "./course-images/css.png";
+import BOOTSTRAP from "./course-images/bootstrap.png";
+import SASS from "./course-images/sass.png";
+import GIT from "./course-images/git.png";
+import GITHUB from "./course-images/github.png";
+import NETLIFY from "./course-images/netlify.png";
+import NODEJS from "./course-images/nodejs.png";
+import JAVASCRIPT from "./course-images/javascript.png";
+import REDUX from "./course-images/redux.png";
+import TYPESCRIPT from "./course-images/typescript.png";
+import MONGODB from "./course-images/mongodb.png";
+import REACT from "./course-images/react.png";
 
 export const lessonsData = {
   html: {
     title: "HTML5",
     iconComponent: <AiFillHtml5 className="icon-group html" />,
-    path: "#",
+    lessonImage: { HTML },
     description: `
-      HTML - we can
-      put here
-      as many lines
-      as we want.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+      tenetur cumque vero exercitationem quidem veniam placeat 
+      doloribus quibusdam nobis eos recusandae quo esse illo qui
+       quae commodi laudantium necessitatibus vitae repudiandae. 
+       Atque architecto accusamus, itaque recusandae facere harum 
+       quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
   css: {
     title: "CSS3",
     iconComponent: <DiCss3 className="icon-group css" />,
-    path: "#",
+    lessonImage: { CSS },
     description: `
-      CSS - we can
-      put here
-      as many lines
-      as we want.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+      tenetur cumque vero exercitationem quidem veniam placeat 
+      doloribus quibusdam nobis eos recusandae quo esse illo qui
+       quae commodi laudantium necessitatibus vitae repudiandae. 
+       Atque architecto accusamus, itaque recusandae facere harum 
+       quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
   sass: {
     title: "SASS",
     iconComponent: <DiSass className="icon-group sass" />,
-    path: "#",
+    lessonImage: { SASS },
     description: `
-      SASS - we can
-      put here
-      as many lines
-      as we want.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+      tenetur cumque vero exercitationem quidem veniam placeat 
+      doloribus quibusdam nobis eos recusandae quo esse illo qui
+       quae commodi laudantium necessitatibus vitae repudiandae. 
+       Atque architecto accusamus, itaque recusandae facere harum 
+       quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
 
   bootstrap: {
     title: "BOOTSTRAP",
     iconComponent: <FaBootstrap className="icon-group bootstrap" />,
-    path: "#",
+    lessonImage: { BOOTSTRAP },
     description: `
-      BOOTSTRAP - we can
-      put here
-      as many lines
-      as we want.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+    tenetur cumque vero exercitationem quidem veniam placeat 
+    doloribus quibusdam nobis eos recusandae quo esse illo qui
+     quae commodi laudantium necessitatibus vitae repudiandae. 
+     Atque architecto accusamus, itaque recusandae facere harum 
+     quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
   netlify: {
     title: "NETLIFY",
     iconComponent: <SiNetlify className="icon-group netlify" />,
-    path: "#",
+    lessonImage: { NETLIFY },
     description: `
-      NETLIFY - we can
-      put here
-      as many lines
-      as we want.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+    tenetur cumque vero exercitationem quidem veniam placeat 
+    doloribus quibusdam nobis eos recusandae quo esse illo qui
+     quae commodi laudantium necessitatibus vitae repudiandae. 
+     Atque architecto accusamus, itaque recusandae facere harum 
+     quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
   git: {
     title: "GIT",
     iconComponent: <FaGitAlt className="icon-group git" />,
-    path: "#",
+    lessonImage: { GIT },
     description: `
-      GIT - we can
-      put here
-      as many lines
-      as we want.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+    tenetur cumque vero exercitationem quidem veniam placeat 
+    doloribus quibusdam nobis eos recusandae quo esse illo qui
+     quae commodi laudantium necessitatibus vitae repudiandae. 
+     Atque architecto accusamus, itaque recusandae facere harum 
+     quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
   github: {
     title: "GITHUB",
     iconComponent: <AiFillGithub className="icon-group github" />,
-    path: "#",
+    lessonImage: { GITHUB },
     description: `
-      GITHUB - we can
-      put here
-      as many lines
-      as we want.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+    tenetur cumque vero exercitationem quidem veniam placeat 
+    doloribus quibusdam nobis eos recusandae quo esse illo qui
+     quae commodi laudantium necessitatibus vitae repudiandae. 
+     Atque architecto accusamus, itaque recusandae facere harum 
+     quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
   codepen: {
     title: "CODEPEN",
     iconComponent: <FiCodepen className="icon-group" />,
-    path: "#",
+    lessonImage: { },
     description: `
-    CODEPEN - we can
-      put here
-      as many lines
-      as we want.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+      tenetur cumque vero exercitationem quidem veniam placeat 
+      doloribus quibusdam nobis eos recusandae quo esse illo qui
+       quae commodi laudantium necessitatibus vitae repudiandae. 
+       Atque architecto accusamus, itaque recusandae facere harum 
+       quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
   javascript: {
     title: "JAVASCRIPT",
     iconComponent: <SiJavascript className="icon-group javascript" />,
-    path: "#",
+    lessonImage: { JAVASCRIPT },
     description: `
-    JAVASCRIPT - we can
-      put here
-      as many lines
-      as we want.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+      tenetur cumque vero exercitationem quidem veniam placeat 
+      doloribus quibusdam nobis eos recusandae quo esse illo qui
+       quae commodi laudantium necessitatibus vitae repudiandae. 
+       Atque architecto accusamus, itaque recusandae facere harum 
+       quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
   reactjs: {
     title: "REACT JS",
     iconComponent: <GrReactjs className="icon-group react-js" />,
-    path: "#",
+    lessonImage: {  REACT },
     description: `
-    REACT JS - we can
-      put here
-      as many lines
-      as we want.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+      tenetur cumque vero exercitationem quidem veniam placeat 
+      doloribus quibusdam nobis eos recusandae quo esse illo qui
+       quae commodi laudantium necessitatibus vitae repudiandae. 
+       Atque architecto accusamus, itaque recusandae facere harum 
+       quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
   redux: {
     title: "REDUX",
     iconComponent: <SiRedux className="icon-group redux" />,
-    path: "#",
+    lessonImage: { REDUX },
     description: `
-    REDUX - we can
-      put here
-      as many lines
-      as we want.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+    tenetur cumque vero exercitationem quidem veniam placeat 
+    doloribus quibusdam nobis eos recusandae quo esse illo qui
+     quae commodi laudantium necessitatibus vitae repudiandae. 
+     Atque architecto accusamus, itaque recusandae facere harum 
+     quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
   typescript: {
     title: "TYPESCRIPT",
     iconComponent: <SiTypescript className="icon-group typescript" />,
-    path: "#",
+    lessonImage: { TYPESCRIPT },
     description: `
-    TYPESCRIPT - we can
-      put here
-      as many lines
-      as we want.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+      tenetur cumque vero exercitationem quidem veniam placeat 
+      doloribus quibusdam nobis eos recusandae quo esse illo qui
+       quae commodi laudantium necessitatibus vitae repudiandae. 
+       Atque architecto accusamus, itaque recusandae facere harum 
+       quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
   nodejs: {
     title: "NODEJS",
     iconComponent: <GrNode className="icon-group nodejs" />,
-    path: "#",
+    lessonImage: { NODEJS },
     description: `
-    NODEJS - we can
-      put here
-      as many lines
-      as we want.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+      tenetur cumque vero exercitationem quidem veniam placeat 
+      doloribus quibusdam nobis eos recusandae quo esse illo qui
+       quae commodi laudantium necessitatibus vitae repudiandae. 
+       Atque architecto accusamus, itaque recusandae facere harum 
+       quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
   mongodb: {
     title: "MONGODB",
     iconComponent: <DiMongodb className="icon-group mongodb" />,
-    path: "#",
+    lessonImage: {  MONGODB },
     description: `
-    MONGODB - we can
-      put here
-      as many lines
-      as we want.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
+      tenetur cumque vero exercitationem quidem veniam placeat 
+      doloribus quibusdam nobis eos recusandae quo esse illo qui
+       quae commodi laudantium necessitatibus vitae repudiandae. 
+       Atque architecto accusamus, itaque recusandae facere harum 
+       quaerat dolores consequuntur quas? Hic, vel.
     `,
   },
 };
@@ -189,7 +244,7 @@ export const roadmapData = [
     children: [
       [lessonsData.javascript],
       [lessonsData.reactjs, lessonsData.redux, lessonsData.typescript],
-      [lessonsData.nodejs, lessonsData.mongodb]
-    ]
-  }
+      [lessonsData.nodejs, lessonsData.mongodb],
+    ],
+  },
 ];
