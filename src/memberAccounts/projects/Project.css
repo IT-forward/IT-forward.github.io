@@ -1,0 +1,20 @@
+/* .project {
+    border: 1px solid red;
+    border-radius: 1px;
+} */
+
+.project:hover {
+    text-decoration: none;
+}
+
+.project-title-div {
+    background-color: #FFECEC;
+    color: #0B132A;
+    padding: 15px;
+}
+
+.project-title {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}

@@ -1,27 +1,42 @@
-/* .quote-icon {
+.testimonail-div {
+    height: 220px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.testimonail-div img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.testimonail-div h4 {
+    color: #0B132A;
+    font-size: 22px;
+}
+
+.testimonail-div h5 {
+    color: #4F5665;
     font-size: 18px;
 }
 
-.testimonail-text-div {
-    padding: 25px 25px 55px 25px;
-    background-color: #FFECEC;
+.testimonail-div p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #0B132A;
 }
 
-.testimonail-img-div {
-    position: relative;
-    bottom: 45px;
-    padding-left: 25px;
-}
-
-.testimonail-div img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border: 5px solid #f8d6d6;
-} */
-
-.testimonail-div img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+@media (max-width: 1199px) and (min-width: 768px) {
+    .testimonail-div h4 {
+        font-size: 20px;
+    }
+    
+    .testimonail-div h5 {
+        font-size: 17px;
+    }
+    
+    .testimonail-div p {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }

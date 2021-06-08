@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import husanImg from './memberImages/husan-img.jpg';
 import Icon1 from './studentsNum/icon-1/icon-1';
 import Testimonail from './testimonail/Testimonail';
+import Project from './projects/Project';
 import { Row, Col, ProgressBar, Carousel } from 'react-bootstrap';
 
 function MemberAccount() {
@@ -125,7 +126,7 @@ function MemberAccount() {
                 </Col>
             </Row>
 
-            <Container>
+            {/* <Container>
                 <Row xs={1} md={3} lg={4} xl={5} id="projects" className="justify-content-center mt-3 mb-5">
                     <Col className="m-2 p-3 project">Project 1</Col>
                     <Col className="m-2 p-3 project">Project 2</Col>
@@ -140,6 +141,14 @@ function MemberAccount() {
                     <Col className="m-2 p-3 project">Project 11</Col>
                     <Col className="m-2 p-3 project">Project 12</Col>
                 </Row>
+            </Container> */}
+
+            <Container>
+                <Row xs={1} md={2} lg={3}>
+                    <Col className="mb-3"><Project /></Col>
+                    <Col className="mb-3"><Project /></Col>
+                    <Col className="mb-3"><Project /></Col>
+                </Row>
             </Container>
 
             <Row className="mt-5 hr-line">
@@ -149,15 +158,15 @@ function MemberAccount() {
                 </Col>
             </Row>
 
-            {/* <div className="mt-2 mb-5" id="testimonails">
+            <div className="mt-2 mb-5" id="testimonails">
                 <Row xs={1} md={2} lg={3}>
-                    <Col><Testimonail /></Col>
-                    <Col><Testimonail /></Col>
-                    <Col><Testimonail /></Col>
+                    <Col className="mb-2 m-lg-0"><Testimonail /></Col>
+                    <Col className="mb-2 m-lg-0"><Testimonail /></Col>
+                    <Col className="mb-2 m-lg-0"><Testimonail /></Col>
                 </Row>
-            </div> */}
+            </div>
 
-            <Carousel>
+            {/* <Carousel>
                 <Carousel.Item>
                     <Row xs={1} md={2} lg={3}>
                         <Col><Testimonail /></Col>
@@ -179,7 +188,7 @@ function MemberAccount() {
                         <Col><Testimonail /></Col>
                     </Row>
                 </Carousel.Item>
-            </Carousel>
+            </Carousel> */}
         </Container >
     );
 }
