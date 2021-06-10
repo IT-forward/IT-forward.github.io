@@ -1,16 +1,29 @@
-/* .project {
-    border: 1px solid red;
-    border-radius: 1px;
-} */
+.project {
+    -webkit-box-shadow: 0px 2px 9px 2px rgba(0,0,0,0.1); 
+    box-shadow: 0px 2px 9px 2px rgba(0,0,0,0.1);
+    border-radius: 7px;
+}
 
 .project:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.anchor:hover {
     text-decoration: none;
+}
+
+.project img {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 .project-title-div {
     background-color: #FFECEC;
     color: #0B132A;
     padding: 15px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
 .project-title {
