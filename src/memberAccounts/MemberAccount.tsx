@@ -14,7 +14,7 @@ function MemberAccount() {
           sm={12}
           md="auto"
           lg="auto"
-          className="d-flex justify-content-center w-330"
+          className="d-flex justify-content-center w-330 mt-1"
         >
           <img src={husanImg} alt="Husan" className="img-fluid" />
         </Col>
@@ -65,7 +65,7 @@ function MemberAccount() {
 
       <Row xs={1} md={3} id="students" className="my-4">
         <Col className="d-flex justify-content-center align-items-cente my-1 py-3 px-0 w-33">
-          <div className="mr-4">
+          <div className="mr-3 d-flex align-items-center">
             <Icon1 />
           </div>
           <div>
@@ -74,7 +74,7 @@ function MemberAccount() {
           </div>
         </Col>
         <Col className="d-flex justify-content-center align-items-cente my-1 py-3 px-0 w-33">
-          <div className="mr-4">
+          <div className="mr-3 d-flex align-items-center">
             <Icon1 />
           </div>
           <div>
@@ -83,7 +83,7 @@ function MemberAccount() {
           </div>
         </Col>
         <Col className="d-flex justify-content-center align-items-cente my-1 py-3 px-0 w-33 border-right-0 border-bottom-0">
-          <div className="mr-4">
+          <div className="mr-3 d-flex align-items-center">
             <Icon1 />
           </div>
           <div>
@@ -176,41 +176,24 @@ function MemberAccount() {
         </Col>
       </Row>
 
-      {/* <Container>
-                <Row xs={1} md={3} lg={4} xl={5} id="projects" className="justify-content-center mt-3 mb-5">
-                    <Col className="m-2 p-3 project">Project 1</Col>
-                    <Col className="m-2 p-3 project">Project 2</Col>
-                    <Col className="m-2 p-3 project">Project 3</Col>
-                    <Col className="m-2 p-3 project">Project 4</Col>
-                    <Col className="m-2 p-3 project">Project 5</Col>
-                    <Col className="m-2 p-3 project">Project 6</Col>
-                    <Col className="m-2 p-3 project">Project 7</Col>
-                    <Col className="m-2 p-3 project">Project 8</Col>
-                    <Col className="m-2 p-3 project">Project 9</Col>
-                    <Col className="m-2 p-3 project">Project 10</Col>
-                    <Col className="m-2 p-3 project">Project 11</Col>
-                    <Col className="m-2 p-3 project">Project 12</Col>
-                </Row>
-            </Container> */}
-
       <Container>
         <Row xs={1} md={2} lg={3}>
-          <Col className="mb-3">
+          <Col className="mb-4">
             <Project />
           </Col>
-          <Col className="mb-3">
+          <Col className="mb-4">
             <Project />
           </Col>
-          <Col className="mb-3">
+          <Col className="mb-4">
             <Project />
           </Col>
-          <Col className="mb-3">
+          <Col className="mb-4">
             <Project />
           </Col>
-          <Col className="mb-3">
+          <Col className="mb-4">
             <Project />
           </Col>
-          <Col className="mb-3">
+          <Col className="mb-4">
             <Project />
           </Col>
         </Row>
@@ -222,14 +205,6 @@ function MemberAccount() {
           <hr />
         </Col>
       </Row>
-
-      {/* <div className="mt-2 mb-5" id="testimonails">
-                <Row xs={1} md={2} lg={3}>
-                    <Col className="mb-2 m-lg-0"><Testimonail /></Col>
-                    <Col className="mb-2 m-lg-0"><Testimonail /></Col>
-                    <Col className="mb-2 m-lg-0"><Testimonail /></Col>
-                </Row>
-            </div> */}
 
       <Carousel className="mb-5" interval={2000}>
         <Carousel.Item>
