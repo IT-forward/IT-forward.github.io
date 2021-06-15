@@ -73,27 +73,27 @@ function LandingPage() {
             <Col className="pl-md-5 d-md-flex align-items-end">
               <Row>
                 <Col id="features-desc">
-                  <h2>We Provide Many Features You Can Use</h2>
+                  <h2>PAY IT FORWARD Communitiy ga qo'shiling!</h2>
                   <p className="my-md-2 my-lg-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                    nisi pariatur, animi facilis quas eius quia fuga totam!
+                    Dasturlashni puxta o'rganishingiz uchun hamjamiyatimiz
+                    a'zosiga aylaning. Buning uchun:
                   </p>
                   <ul className="list-unstyled mb-0">
                     <li>
                       <AiFillCheckCircle className="check-circle mr-2" />
-                      feature 1
+                      A'zolar daraxti sahifasiga o'ting.
                     </li>
                     <li>
                       <AiFillCheckCircle className="check-circle mr-2" />
-                      feature 2
+                      Daraxtdagi dasturchilardan biri tanlang.
                     </li>
                     <li>
                       <AiFillCheckCircle className="check-circle mr-2" />
-                      feature 3
+                      Email pochtasiga xat yozing.
                     </li>
                     <li>
                       <AiFillCheckCircle className="check-circle mr-2" />
-                      feature 4
+                      Talab qilinadigan shartlarga rozi bo'ling.
                     </li>
                   </ul>
                 </Col>
@@ -164,7 +164,7 @@ function LandingPage() {
               className="d-flex align-items-center justify-content-center justify-content-md-start"
             >
               <div id="footer-cap" className="font-weight-bolder">
-                Open Enterprise
+                Pay IT Forward
               </div>
             </Col>
             <Col sm={12} md={9} lg={8}>
