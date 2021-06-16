@@ -29,7 +29,11 @@ function LandingPage() {
                 <Nav.Link href="#" id="nav-link-2" className="px-0">
                   A'zolar daraxti
                 </Nav.Link>
-                <Nav.Link href="#" id="nav-link-3" className="px-0 mr-0">
+                <Nav.Link
+                  href="#contact-us"
+                  id="nav-link-3"
+                  className="px-0 mr-0"
+                >
                   Bog'lanish
                 </Nav.Link>
               </Nav>
