@@ -73,27 +73,35 @@ function LandingPage() {
             <Col className="pl-md-5 d-md-flex align-items-end">
               <Row>
                 <Col id="features-desc">
-                  <h2>PAY IT FORWARD Communitiy ga qo'shiling!</h2>
+                  <h2>PAY IT FORWARD jamoasiga qo'shiling!</h2>
                   <p className="my-md-2 my-lg-3">
-                    Dasturlashni puxta o'rganishingiz uchun hamjamiyatimiz
-                    a'zosiga aylaning. Buning uchun:
+                    Dasturlashni puxta o'rganishingiz uchun quyidagi talablarga
+                    javob berishingiz kerak:
                   </p>
                   <ul className="list-unstyled mb-0">
                     <li>
                       <AiFillCheckCircle className="check-circle mr-2" />
-                      A'zolar daraxti sahifasiga o'ting.
+                      Dasturlashga kuchli qiziqish.
                     </li>
                     <li>
                       <AiFillCheckCircle className="check-circle mr-2" />
-                      Daraxtdagi dasturchilardan biri tanlang.
+                      Ingliz tilini kamida <b>intermediate</b> darajada bilish.
                     </li>
                     <li>
                       <AiFillCheckCircle className="check-circle mr-2" />
-                      Email pochtasiga xat yozing.
+                      Mas'uliyatli va sabr-toqatli bo'lish.
                     </li>
                     <li>
                       <AiFillCheckCircle className="check-circle mr-2" />
-                      Talab qilinadigan shartlarga rozi bo'ling.
+                      Tanqidiy fikrlash va muammolarni mantiqiy yecha olish.
+                    </li>
+                    <li>
+                      <AiFillCheckCircle className="check-circle mr-2" />
+                      Jamoa bilan ishlash qobiliyati.
+                    </li>
+                    <li>
+                      <AiFillCheckCircle className="check-circle mr-2" />
+                      Tashabbuskor va yangilikka intiluvchanlik.
                     </li>
                   </ul>
                 </Col>
@@ -191,7 +199,7 @@ function LandingPage() {
                     GitHub
                   </a>
                 </Col>
-                <Col md="auto" id="footer-link" className="ml-md-2 ml-lg-4">
+                {/* <Col md="auto" id="footer-link" className="ml-md-2 ml-lg-4">
                   <a
                     href="https://twitter.com/KadirovO"
                     target="_blank"
@@ -212,7 +220,7 @@ function LandingPage() {
                   >
                     Contact us
                   </a>
-                </Col>
+                </Col> */}
               </Row>
             </Col>
           </Row>
