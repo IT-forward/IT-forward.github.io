@@ -5,6 +5,7 @@ import NumOfStudents from "./memAccComponents/numOfStudents/NumOfStudents";
 import SectionCaption from "./memAccComponents/sectionCaption/SectionCaption";
 import Progress from "./memAccComponents/progress/Progress";
 import Projects from "./memAccComponents/projects/Projects";
+import Testimonials from "./memAccComponents/testimonials/Testimonials";
 
 function MemAccount(props: any) {
   const headerInfo = {
@@ -18,6 +19,7 @@ function MemAccount(props: any) {
   const studentsInfo = props.memberInfo.students;
   const skillsInfo = props.memberInfo.skills;
   const projectsInfo = props.memberInfo.projects;
+  const testimonialsInfo = props.memberInfo.testimonials;
 
   return (
     <div id="account">
@@ -39,6 +41,12 @@ function MemAccount(props: any) {
         </div>
         <div>
           <Projects projectsInfo={projectsInfo} />
+        </div>
+        <div className="section-div">
+          <SectionCaption caption="TESTIMONAILS" />
+        </div>
+        <div>
+          <Testimonials testimonialsInfo={testimonialsInfo} />
         </div>
       </Container>
     </div>

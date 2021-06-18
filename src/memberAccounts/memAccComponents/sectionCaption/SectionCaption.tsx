@@ -1,7 +1,7 @@
-import './SectionCaption.css';
+import "./SectionCaption.css";
 
 function SectionCaption(props: any) {
-    const caption = props.caption;
+  const caption = props.caption;
   return (
     <div className="hr-line">
       <span>{caption}</span>

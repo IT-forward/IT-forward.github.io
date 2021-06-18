@@ -1,6 +1,6 @@
 import "./Header.css";
 import { Row, Col } from "react-bootstrap";
-import memImg from "../../memImages/husan-img.jpg";
+import memImg from "../../memberImages/husan-img.jpg";
 import EphasisedInfo from "../emphasisedInfo/EmphasisedInfo";
 
 function Header(props: any) {
@@ -25,7 +25,7 @@ function Header(props: any) {
           <h1 className="text-center text-md-left">{memberFullName}</h1>
           <h3 className="text-center text-md-left">{memberProfession}</h3>
           <p>{about}</p>
-          <div className="my-2"> 
+          <div className="my-2">
             <EphasisedInfo emphasisedInfo={emphasisedInfo} />
           </div>
           <p className="d-md-none d-lg-block">{extraInfo}</p>

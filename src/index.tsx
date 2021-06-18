@@ -1,10 +1,8 @@
 import ReactDOM from "react-dom";
 // import LandingPage from './LandingPage/LandingPage';
-import MemberAccount from "./memberAccounts/MemberAccount";
 import MemAccount from "./memberAccounts/MemAccount";
 import "bootstrap/dist/css/bootstrap.css";
 
-import memImg from "./memberAccounts/memImages/husan-img.jpg";
 import { BsFillPersonFill } from "react-icons/bs";
 
 const memberInfo = {
@@ -111,10 +109,32 @@ const memberInfo = {
       sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
   },
+  testimonials: {
+    testimonial1: {
+      name: "Husan Eshonqulov",
+      profession: "Web Developer",
+      image: "",
+      opinion:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
+    },
+    testimonial2: {
+      name: "Husan Eshonqulov",
+      profession: "Web Developer",
+      image: "",
+      opinion:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
+    },
+    testimonial3: {
+      name: "Husan Eshonqulov",
+      profession: "Web Developer",
+      image: "",
+      opinion:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
+    },
+  },
 };
 
 ReactDOM.render(
   <MemAccount memberInfo={memberInfo} />,
   document.getElementById("root")
 );
-// ReactDOM.render(<MemberAccount />, document.getElementById('root'));

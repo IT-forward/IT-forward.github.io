@@ -9,9 +9,7 @@ function StudentInfo(props: any) {
     <div className="d-inline-block">
       <div className="d-flex align-items-center">
         <div className="icon-div mr-3">
-          <div className="icon">
-            {icon}
-          </div>
+          <div className="icon">{icon}</div>
         </div>
         <div>
           <div className="font-weight-bold student-number">{numbers}</div>

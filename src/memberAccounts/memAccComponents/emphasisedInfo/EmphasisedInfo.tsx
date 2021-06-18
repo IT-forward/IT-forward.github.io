@@ -16,7 +16,7 @@ function EmphasisedInfo(props: any) {
     );
   }
   return (
-    <Row xs={1} lg={2} >
+    <Row xs={1} lg={2}>
       {row}
     </Row>
   );

@@ -57,7 +57,7 @@
   font-weight: 500;
 }
 
-@media (max-width: 355px){
+@media (max-width: 355px) {
   .project-middle {
     display: flex;
   }

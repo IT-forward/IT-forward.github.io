@@ -1,13 +1,13 @@
-import './NumOfStudents.css';
-import {Row, Col} from 'react-bootstrap';
-import StudentInfo from '../studentInfo/StudentInfo';
+import "./NumOfStudents.css";
+import { Row, Col } from "react-bootstrap";
+import StudentInfo from "../studentInfo/StudentInfo";
 
 function NumOfStudents(props: any) {
   const studentsInfo = props.studentsInfo;
   const students = [];
   let id = 0;
 
-  for (const property in studentsInfo){
+  for (const property in studentsInfo) {
     const icon = studentsInfo[property].icon;
     const numbers = studentsInfo[property].numbers;
     const name = studentsInfo[property].name;
@@ -17,7 +17,7 @@ function NumOfStudents(props: any) {
         <StudentInfo icon={icon} nums={numbers} name={name} />
       </Col>
     );
-    
+
     id++;
   }
 

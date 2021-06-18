@@ -1,4 +1,4 @@
-import './ProgressElement.css';
+import "./ProgressElement.css";
 import { ProgressBar } from "react-bootstrap";
 
 function ProgressElement(props: any) {
@@ -12,7 +12,11 @@ function ProgressElement(props: any) {
         <div className="skill-name font-weight-bold">{skill}</div>
         <div>{level}</div>
       </div>
-      <ProgressBar now={percent} variant={"red-bar"} className="progress-thiner" />
+      <ProgressBar
+        now={percent}
+        variant={"red-bar"}
+        className="progress-thiner"
+      />
     </div>
   );
 }
