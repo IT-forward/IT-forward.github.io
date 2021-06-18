@@ -1,0 +1,15 @@
+.hr-line {
+  color: #0b132a;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.hr-line hr {
+  width: 130px;
+  height: 1px;
+  margin: 0;
+  margin-bottom: 4px;
+  margin-left: 12px;
+  display: inline-block;
+  background-color: #f53838;
+}

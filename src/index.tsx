@@ -28,17 +28,87 @@ const memberInfo = {
     group1: {
       icon: <BsFillPersonFill />,
       numbers: "90+",
-      name: 'Users',
+      name: "Users",
     },
     group2: {
       icon: <BsFillPersonFill />,
       numbers: "90+",
-      name: 'Users',
+      name: "Users",
     },
     group3: {
       icon: <BsFillPersonFill />,
       numbers: "90+",
-      name: 'Users',
+      name: "Users",
+    },
+  },
+  skills: {
+    skill1: {
+      skill: "HTML",
+      level: "level",
+      percent: 77,
+    },
+    skill2: {
+      skill: "CSS",
+      level: "level",
+      percent: 60,
+    },
+    skill3: {
+      skill: "JAVASCRIPT",
+      level: "level",
+      percent: 74,
+    },
+    skill4: {
+      skill: "BOOTSTRAP",
+      level: "level",
+      percent: 55,
+    },
+    skill5: {
+      skill: "REACT JS",
+      level: "level",
+      percent: 64,
+    },
+    skill6: {
+      skill: "REDUX",
+      level: "level",
+      percent: 34,
+    },
+  },
+  projects: {
+    project1: {
+      projectName: "Rock Paper Scissors game",
+      projectImg: "",
+      deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
+      sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
+    },
+    project2: {
+      projectName: "Rock Paper Scissors game",
+      projectImg: "",
+      deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
+      sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
+    },
+    project3: {
+      projectName: "Rock Paper Scissors game",
+      projectImg: "",
+      deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
+      sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
+    },
+    project4: {
+      projectName: "Rock Paper Scissors game",
+      projectImg: "",
+      deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
+      sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
+    },
+    project5: {
+      projectName: "Rock Paper Scissors game",
+      projectImg: "",
+      deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
+      sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
+    },
+    project6: {
+      projectName: "Rock Paper Scissors game",
+      projectImg: "",
+      deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
+      sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
   },
 };

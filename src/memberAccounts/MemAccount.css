@@ -12,6 +12,11 @@
   box-shadow: 0px 4px 17px 4px rgba(0, 0, 0, 0.15);
 }
 
+.section-div {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 992px) {
   #account {
     font-size: 18px;
