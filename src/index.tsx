@@ -1,9 +1,11 @@
+import "bootstrap/dist/css/bootstrap.css";
 import ReactDOM from "react-dom";
 // import LandingPage from './LandingPage/LandingPage';
 import MemAccount from "./memberAccounts/MemAccount";
-import "bootstrap/dist/css/bootstrap.css";
 
 import { BsFillPersonFill } from "react-icons/bs";
+import memberImg from './memberAccounts/memberImages/husan-img.jpg';
+import projectImg from './memberAccounts/projectImages/project1.png';
 
 const memberInfo = {
   memberFullName: "Husan Eshonqulov",
@@ -21,7 +23,7 @@ const memberInfo = {
   extraInfo: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
   Consectetur molestiae, alias explicabo consequuntur itaque quisquam repellat eos magnam doloremque, 
   maxime possimus amet nulla et quia non at ad. Reprehenderit enim molestias.`,
-  memberImage: "memImg",
+  memberImage: memberImg,
   students: {
     group1: {
       icon: <BsFillPersonFill />,
@@ -74,37 +76,37 @@ const memberInfo = {
   projects: {
     project1: {
       projectName: "Rock Paper Scissors game",
-      projectImg: "",
+      projectImg: projectImg,
       deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
       sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
     project2: {
       projectName: "Rock Paper Scissors game",
-      projectImg: "",
+      projectImg: projectImg,
       deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
       sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
     project3: {
       projectName: "Rock Paper Scissors game",
-      projectImg: "",
+      projectImg: projectImg,
       deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
       sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
     project4: {
       projectName: "Rock Paper Scissors game",
-      projectImg: "",
+      projectImg: projectImg,
       deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
       sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
     project5: {
       projectName: "Rock Paper Scissors game",
-      projectImg: "",
+      projectImg: projectImg,
       deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
       sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
     project6: {
       projectName: "Rock Paper Scissors game",
-      projectImg: "",
+      projectImg: projectImg,
       deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
       sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
@@ -113,21 +115,21 @@ const memberInfo = {
     testimonial1: {
       name: "Husan Eshonqulov",
       profession: "Web Developer",
-      image: "",
+      image: memberImg,
       opinion:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
     },
     testimonial2: {
       name: "Husan Eshonqulov",
       profession: "Web Developer",
-      image: "",
+      image: memberImg,
       opinion:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
     },
     testimonial3: {
       name: "Husan Eshonqulov",
       profession: "Web Developer",
-      image: "",
+      image: memberImg,
       opinion:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
     },

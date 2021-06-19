@@ -1,5 +1,4 @@
 import "./Project.css";
-import project1Img from "../../projectImages/project1.png";
 
 function Project(props: any) {
   const name = props.projectName;
@@ -11,7 +10,7 @@ function Project(props: any) {
     <div className="project">
       <div>
         <div className="img-div">
-          <img src={project1Img} alt="project 1" className="img-fluid" />
+          <img src={image} alt="project 1" className="img-fluid" />
         </div>
       </div>
 

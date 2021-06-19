@@ -1,5 +1,4 @@
 import "./Testimonial.css";
-import husanImg from "../../memberImages/husan-img.jpg";
 
 function Testimonial(props: any) {
   const name = props.name;
@@ -10,7 +9,7 @@ function Testimonial(props: any) {
   return (
     <div className="testimonail-div p-4">
       <div className="d-flex align-items-center">
-        <img src={husanImg} alt="husan" />
+        <img src={image} alt="husan" />
         <div className="ml-4">
           <h4 className="my-1">{name}</h4>
           <h5 className="my-1">{profession}</h5>

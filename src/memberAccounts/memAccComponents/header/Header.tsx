@@ -1,6 +1,5 @@
 import "./Header.css";
 import { Row, Col } from "react-bootstrap";
-import memImg from "../../memberImages/husan-img.jpg";
 import EphasisedInfo from "../emphasisedInfo/EmphasisedInfo";
 
 function Header(props: any) {
@@ -9,6 +8,7 @@ function Header(props: any) {
   const about = props.headerInfo.about;
   const extraInfo = props.headerInfo.extraInfo;
   const emphasisedInfo = props.headerInfo.emphasisedInfo;
+  const memberImg = props.headerInfo.memberImage;
 
   return (
     <div>
@@ -19,7 +19,7 @@ function Header(props: any) {
           lg="auto"
           className="d-flex justify-content-center w-330 mt-1"
         >
-          <img src={memImg} alt="Husan" className="img-fluid" />
+          <img src={memberImg} alt="Husan" className="img-fluid" />
         </Col>
         <Col sm={12} md={6} lg={7} className="w-330">
           <h1 className="text-center text-md-left">{memberFullName}</h1>
