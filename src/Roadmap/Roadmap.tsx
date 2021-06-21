@@ -2,12 +2,15 @@ import "../Roadmap/Roadmap.css";
 import Chapter from "./components/Chapter";
 import RoadmapRow from "./components/RoadmapRow";
 import Lesson from "./components/Lesson";
-
-
+import Navbar from '../LandingPage/Navbar';
+import Footer from '../LandingPage/Footer';
 import { roadmapData } from "./data";
 
 function Roadmap() {
   return (
+    <div>
+
+    <Navbar />
     <div id="body">
       <h2 className="roadmap-name">
         <span>Pay IT Forward</span> jamoasining dasturlashni o'rganish xaritasi
@@ -30,6 +33,8 @@ function Roadmap() {
         );
       })}
   
+    </div>
+    <Footer />
     </div>
   );
 }

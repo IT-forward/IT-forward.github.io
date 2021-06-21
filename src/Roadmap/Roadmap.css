@@ -52,7 +52,7 @@
 
 .roadmap-name {
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     padding-top: 45px;
     font-weight: 500;
 }
@@ -109,8 +109,8 @@ p {
 
 .image-box-solid-group .image-box-solid-icon {
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     padding: 30px;
 }
 
@@ -121,8 +121,8 @@ p {
         font-size: 25px;
     }
     .image-box-solid-group .image-box-solid-icon {
-        width: 65px;
-        height: 65px;
+        width: 85px;
+        height: 85px;
     }
     .icon-group {
         width: 65px;

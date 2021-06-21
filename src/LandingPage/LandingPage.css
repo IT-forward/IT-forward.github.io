@@ -2,6 +2,10 @@
   width: 250px;
 }
 
+.navStyle:hover {
+  text-decoration: none;
+}
+
 #nav-link-1,
 #nav-link-2,
 #nav-link-3 {

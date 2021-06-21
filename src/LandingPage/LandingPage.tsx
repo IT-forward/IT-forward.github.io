@@ -1,45 +1,20 @@
 import "../LandingPage/LandingPage.css";
-import brandLogo from "./LandingPageImages/Logo-full.svg";
 import headerImg from "./LandingPageImages/header-image.svg";
 import featuresImg from "./LandingPageImages/features-img.svg";
 import Telegram from "./smComponents/telegram/Telegram";
 import Email from "./smComponents/email/Email";
 import Facebook from "./smComponents/facebook/Facebook";
 import { AiFillCheckCircle } from "react-icons/ai";
-import { Container, Nav, Navbar, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function LandingPage() {
   return (
     <div>
+      <Navbar />
       <Container id="body">
         <header>
-          <Navbar collapseOnSelect expand="md" className="px-0 mt-2">
-            <Navbar.Brand href="#">
-              <img id="brand-logo" src={brandLogo} alt="brand logo" />
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse
-              className="justify-content-end"
-              id="responsive-navbar-nav"
-            >
-              <Nav>
-                <Nav.Link href="#" id="nav-link-1" className="px-0">
-                  Yo'l xatirasi
-                </Nav.Link>
-                <Nav.Link href="#" id="nav-link-2" className="px-0">
-                  A'zolar daraxti
-                </Nav.Link>
-                <Nav.Link
-                  href="#contact-us"
-                  id="nav-link-3"
-                  className="px-0 mr-0"
-                >
-                  Bog'lanish
-                </Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-
           <article id="description">
             <Row xs={1} sm={1} md={2}>
               <Col>
@@ -52,12 +27,14 @@ function LandingPage() {
                   yo'l xaritasini topishingiz mumkin.
                 </p>
                 <div>
+                  <Link to='/batafsil-malumot'>
                   <button
                     className="btn btn-lg btn-danger border-0"
                     id="desc-btn"
                   >
-                    Yo'l xaritasi
+                    Batafsil
                   </button>
+                  </Link>
                 </div>
               </Col>
 
@@ -203,28 +180,6 @@ function LandingPage() {
                     GitHub
                   </a>
                 </Col>
-                {/* <Col md="auto" id="footer-link" className="ml-md-2 ml-lg-4">
-                  <a
-                    href="https://twitter.com/KadirovO"
-                    target="_blank"
-                    rel="noreferrer"
-                    id="footer-link-3"
-                    className="text-decoration-none"
-                  >
-                    Twitter
-                  </a>
-                </Col>
-                <Col md="auto" id="footer-link" className="ml-md-2 ml-lg-4">
-                  <a
-                    href="mailto:bahriddin.abdiev@gmail.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    id="footer-link-4"
-                    className="text-decoration-none"
-                  >
-                    Contact us
-                  </a>
-                </Col> */}
               </Row>
             </Col>
           </Row>

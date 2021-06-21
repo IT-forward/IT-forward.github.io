@@ -4,6 +4,8 @@ import MenteeNode from "./customNodes/MenteeNode";
 import MentorMenteeNode from "./customNodes/MentorMenteeNode";
 import { treeData } from "./treeData";
 import "./OrgChart.css";
+import Navbar from '../LandingPage/Navbar';
+import Footer from '../LandingPage/Footer';
 
 const bottomLeftX = 300;
 const bottomLeftY = 300;
@@ -51,16 +53,18 @@ const nodeTypes = {
 export default function Tree() {
   return (
     <div style={{ height: "100vh" }}>
+      <Navbar />
       <ReactFlow
         elements={elements}
         nodeTypes={nodeTypes}
-        defaultZoom={1}
+        defaultZoom={0.8}
         nodesDraggable={false}
       >
         <Controls />
         <MiniMap />
         <Background />
       </ReactFlow>
+      <Footer />
     </div>
   );
 }
