@@ -1,4 +1,6 @@
 import "./Project.css";
+import {MdLink} from 'react-icons/md';
+import {RiGithubFill} from 'react-icons/ri';
 
 type ProjectType = {
   name: string,
@@ -23,20 +25,20 @@ function Project(props: ProjectType) {
 
       <div className="project-middle">
         <a
-          className="btn btn-light mr-2"
+          className="mr-3"
           href={deployPath}
           target="_blank"
           rel="noreferrer"
         >
-          Ko'rish
+          <MdLink size="40px" color="#fff" />
         </a>
         <a
-          className="btn btn-light ml-2"
+          className="ml-3"
           href={sourcePath}
           target="_blank"
           rel="noreferrer"
         >
-          Manzil
+          <RiGithubFill size="40px" color="#fff" />
         </a>
       </div>
       <div className="project-title-div">
