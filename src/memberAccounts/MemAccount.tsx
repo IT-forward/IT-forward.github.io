@@ -1,22 +1,72 @@
 import "./MemAccount.css";
 import { Container } from "react-bootstrap";
-import Header from "./memAccComponents/header/Header";
-import NumOfStudents from "./memAccComponents/numOfStudents/NumOfStudents";
-import SectionCaption from "./memAccComponents/sectionCaption/SectionCaption";
-import Progress from "./memAccComponents/progress/Progress";
-import Projects from "./memAccComponents/projects/Projects";
-import Testimonials from "./memAccComponents/testimonials/Testimonials";
+import Header from "./components/header/Header";
+import Facts from "./components/facts/Facts";
+import SectionCaption from "./components/sectionCaption/SectionCaption";
+import Progress from "./components/progress/Progress";
+import Projects from "./components/projects/Projects";
+import Testimonials from "./components/testimonials/Testimonials";
 
-function MemAccount(props: any) {
-  const headerInfo = {
-    memberFullName: props.memberInfo.memberFullName,
-    memberProfession: props.memberInfo.memberProfession,
-    about: props.memberInfo.about,
-    emphasisedInfo: props.memberInfo.emphasisedInfo,
-    extraInfo: props.memberInfo.extraInfo,
-    memberImage: props.memberInfo.memberImage,
+type MemberType = {
+  memberInfo: {
+    fullName: string;
+    profession: string;
+    summary: string;
+    separated: SeparatedType;
+    about: string;
+    image: string;
+    facts: FactsType;
+    skills: SkillsType;
+    projects: ProjectsType;
+    testimonials: TestimonialsType;
   };
-  const studentsInfo = props.memberInfo.students;
+};
+
+type SeparatedType = {
+  City: string;
+  Phone: string;
+  Email: string;
+  Degree: string;
+  Freelance: string;
+  Website: string;
+};
+type FactsType = Array<FactType>;
+type FactType = {
+  icon: JSX.Element;
+  numbers: string;
+  type: string;
+};
+type SkillsType = Array<SkillType>;
+type SkillType = {
+  name: string;
+  level: string;
+  percent: number;
+};
+type ProjectsType = Array<ProjectType>;
+type ProjectType = {
+  name: string;
+  image: string;
+  deployPath: string;
+  sourcePath: string;
+};
+type TestimonialsType = Array<TestimonialType>;
+type TestimonialType = {
+  name: string;
+  profession: string;
+  image: string;
+  opinion: string;
+};
+
+function MemAccount(props: MemberType) {
+  const headerInfo = {
+    fullName: props.memberInfo.fullName,
+    profession: props.memberInfo.profession,
+    summary: props.memberInfo.summary,
+    separated: props.memberInfo.separated,
+    about: props.memberInfo.about,
+    image: props.memberInfo.image,
+  };
+  const factsInfo = props.memberInfo.facts;
   const skillsInfo = props.memberInfo.skills;
   const projectsInfo = props.memberInfo.projects;
   const testimonialsInfo = props.memberInfo.testimonials;
@@ -27,8 +77,8 @@ function MemAccount(props: any) {
         <div className="mt-2">
           <Header headerInfo={headerInfo} />
         </div>
-        <div className="mb-4" id="mem-student-div">
-          <NumOfStudents studentsInfo={studentsInfo} />
+        <div className="mb-4 mt-3" id="mem-student-div">
+          <Facts factsInfo={factsInfo} />
         </div>
         <div className="section-div">
           <SectionCaption caption="SKILLS" />

@@ -1,7 +1,13 @@
 import "./ProgressElement.css";
 import { ProgressBar } from "react-bootstrap";
 
-function ProgressElement(props: any) {
+type ProgressElementType = {
+  skill: string,
+  level: string,
+  percent: number,
+}
+
+function ProgressElement(props: ProgressElementType) {
   const skill = props.skill;
   const level = props.level;
   const percent = props.percent;

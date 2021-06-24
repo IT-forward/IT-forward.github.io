@@ -1,6 +1,10 @@
 import "./SectionCaption.css";
 
-function SectionCaption(props: any) {
+type SectionCaptionType = {
+  caption: string,
+};
+
+function SectionCaption(props: SectionCaptionType) {
   const caption = props.caption;
   return (
     <div className="hr-line">

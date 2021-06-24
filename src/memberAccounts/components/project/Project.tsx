@@ -1,8 +1,15 @@
 import "./Project.css";
 
-function Project(props: any) {
-  const name = props.projectName;
-  const image = props.projectImg;
+type ProjectType = {
+  name: string,
+  image: string,
+  deployPath: string,
+  sourcePath: string,
+}
+
+function Project(props: ProjectType) {
+  const name = props.name;
+  const image = props.image;
   const deployPath = props.deployPath;
   const sourcePath = props.sourcePath;
 

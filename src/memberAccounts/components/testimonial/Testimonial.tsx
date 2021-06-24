@@ -1,6 +1,13 @@
 import "./Testimonial.css";
 
-function Testimonial(props: any) {
+type TestimonialType = {
+  name: string,
+  profession: string,
+  opinion: string,
+  image: string,
+};
+
+function Testimonial(props: TestimonialType) {
   const name = props.name;
   const profession = props.profession;
   const opinion = props.opinion;

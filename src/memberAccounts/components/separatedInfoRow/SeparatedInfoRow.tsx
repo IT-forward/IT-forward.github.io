@@ -1,4 +1,4 @@
-function EphasisedInfoRow(props: any) {
+function SeparatedInfoRow(props: any) {
   const emphasis = props.emphasis;
   const value = props.value;
 
@@ -9,4 +9,4 @@ function EphasisedInfoRow(props: any) {
   );
 }
 
-export default EphasisedInfoRow;
+export default SeparatedInfoRow;

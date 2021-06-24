@@ -1,14 +1,14 @@
 import { Row, Col } from "react-bootstrap";
-import EmphasisedInfoRow from "../emphasisedInfoRow/EmphasisedInfoRow";
+import SeparatedInfoRow from "../separatedInfoRow/SeparatedInfoRow";
 
-function EmphasisedInfo(props: any) {
+function SeparatedInfo(props: any) {
   const emphasisedInfo = props.emphasisedInfo;
   let row = [];
 
   for (const emphasis in emphasisedInfo) {
     row.push(
       <Col className="acc-info">
-        <EmphasisedInfoRow
+        <SeparatedInfoRow
           emphasis={emphasis}
           value={emphasisedInfo[emphasis]}
         />
@@ -22,4 +22,4 @@ function EmphasisedInfo(props: any) {
   );
 }
 
-export default EmphasisedInfo;
+export default SeparatedInfo;

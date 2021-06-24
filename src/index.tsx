@@ -4,15 +4,15 @@ import ReactDOM from "react-dom";
 import MemAccount from "./memberAccounts/MemAccount";
 
 import { BsFillPersonFill } from "react-icons/bs";
-import memberImg from './memberAccounts/memberImages/husan-img.jpg';
-import projectImg from './memberAccounts/projectImages/project1.png';
+import memberImg from "./memberAccounts/memberImages/husan-img.jpg";
+import projectImg from "./memberAccounts/projectImages/project1.png";
 
 const memberInfo = {
-  memberFullName: "Husan Eshonqulov",
-  memberProfession: "Web Developer",
-  about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  fullName: "Husan Eshonqulov",
+  profession: "Web Developer",
+  summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
     Inventore itaque architecto ea labore veniam!`,
-  emphasisedInfo: {
+  separated: {
     City: "something",
     Phone: "something",
     Email: "something",
@@ -20,120 +20,120 @@ const memberInfo = {
     Freelance: "something",
     Website: "something",
   },
-  extraInfo: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+  about: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
   Consectetur molestiae, alias explicabo consequuntur itaque quisquam repellat eos magnam doloremque, 
   maxime possimus amet nulla et quia non at ad. Reprehenderit enim molestias.`,
-  memberImage: memberImg,
-  students: {
-    group1: {
+  image: memberImg,
+  facts: [
+    {
       icon: <BsFillPersonFill />,
       numbers: "90+",
-      name: "Users",
+      type: "Users",
     },
-    group2: {
+    {
       icon: <BsFillPersonFill />,
       numbers: "90+",
-      name: "Users",
+      type: "Users",
     },
-    group3: {
+    {
       icon: <BsFillPersonFill />,
       numbers: "90+",
-      name: "Users",
+      type: "Users",
     },
-  },
-  skills: {
-    skill1: {
-      skill: "HTML",
+  ],
+  skills: [
+    {
+      name: "HTML",
       level: "level",
       percent: 77,
     },
-    skill2: {
-      skill: "CSS",
+    {
+      name: "CSS",
       level: "level",
       percent: 60,
     },
-    skill3: {
-      skill: "JAVASCRIPT",
+    {
+      name: "JAVASCRIPT",
       level: "level",
       percent: 74,
     },
-    skill4: {
-      skill: "BOOTSTRAP",
+    {
+      name: "BOOTSTRAP",
       level: "level",
       percent: 55,
     },
-    skill5: {
-      skill: "REACT JS",
+    {
+      name: "REACT JS",
       level: "level",
       percent: 64,
     },
-    skill6: {
-      skill: "REDUX",
+    {
+      name: "REDUX",
       level: "level",
       percent: 34,
     },
-  },
-  projects: {
-    project1: {
-      projectName: "Rock Paper Scissors game",
-      projectImg: projectImg,
+  ],
+  projects: [
+    {
+      name: "Rock Paper Scissors game",
+      image: projectImg,
       deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
       sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
-    project2: {
-      projectName: "Rock Paper Scissors game",
-      projectImg: projectImg,
+    {
+      name: "Rock Paper Scissors game",
+      image: projectImg,
       deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
       sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
-    project3: {
-      projectName: "Rock Paper Scissors game",
-      projectImg: projectImg,
+    {
+      name: "Rock Paper Scissors game",
+      image: projectImg,
       deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
       sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
-    project4: {
-      projectName: "Rock Paper Scissors game",
-      projectImg: projectImg,
+    {
+      name: "Rock Paper Scissors game",
+      image: projectImg,
       deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
       sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
-    project5: {
-      projectName: "Rock Paper Scissors game",
-      projectImg: projectImg,
+    {
+      name: "Rock Paper Scissors game",
+      image: projectImg,
       deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
       sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
-    project6: {
-      projectName: "Rock Paper Scissors game",
-      projectImg: projectImg,
+    {
+      name: "Rock Paper Scissors game",
+      image: projectImg,
       deployPath: "https://rock-paper-scissors-game-00.netlify.app/",
       sourcePath: "https://github.com/Husan-Eshonqulov/rock-paper-scissors",
     },
-  },
-  testimonials: {
-    testimonial1: {
+  ],
+  testimonials: [
+    {
       name: "Husan Eshonqulov",
       profession: "Web Developer",
       image: memberImg,
       opinion:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
     },
-    testimonial2: {
+    {
       name: "Husan Eshonqulov",
       profession: "Web Developer",
       image: memberImg,
       opinion:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
     },
-    testimonial3: {
+    {
       name: "Husan Eshonqulov",
       profession: "Web Developer",
       image: memberImg,
       opinion:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
     },
-  },
+  ],
 };
 
 ReactDOM.render(

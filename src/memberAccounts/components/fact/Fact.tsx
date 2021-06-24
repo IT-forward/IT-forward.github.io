@@ -1,9 +1,9 @@
-import "./StudentInfo.css";
+import "./Fact.css";
 
-function StudentInfo(props: any) {
+function Fact(props: any) {
   const icon = props.icon;
   const numbers = props.nums;
-  const name = props.name;
+  const type = props.type;
 
   return (
     <div className="d-inline-block">
@@ -13,11 +13,11 @@ function StudentInfo(props: any) {
         </div>
         <div>
           <div className="font-weight-bold student-number">{numbers}</div>
-          <div>{name}</div>
+          <div>{type}</div>
         </div>
       </div>
     </div>
   );
 }
 
-export default StudentInfo;
+export default Fact;

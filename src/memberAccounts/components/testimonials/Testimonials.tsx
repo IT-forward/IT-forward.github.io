@@ -1,15 +1,25 @@
 import { Row, Col, Carousel } from "react-bootstrap";
 import Testimonial from "../testimonial/Testimonial";
 
-function Testimonials(props: any) {
-  const testimonials = props.testimonialsInfo;
-  let row = [];
+type TestimonialsType = {
+  testimonialsInfo: Array<TestimonialType>;
+};
+type TestimonialType = {
+  name: string;
+  profession: string;
+  image: string;
+  opinion: string;
+};
 
-  for (const property in testimonials) {
-    const name = testimonials[property].name;
-    const profession = testimonials[property].profession;
-    const opinion = testimonials[property].opinion;
-    const image = testimonials[property].image;
+function Testimonials(props: TestimonialsType) {
+  const testimonials = props.testimonialsInfo;
+  let row: any = [];
+
+  testimonials.forEach((testimonial) => {
+    const name = testimonial.name;
+    const profession = testimonial.profession;
+    const opinion = testimonial.opinion;
+    const image = testimonial.image;
 
     row.push(
       <Col>
@@ -23,7 +33,7 @@ function Testimonials(props: any) {
         }
       </Col>
     );
-  }
+  });
 
   return (
     <div>
