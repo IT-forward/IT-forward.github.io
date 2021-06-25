@@ -75,7 +75,7 @@ function MemAccount(props: MemberType) {
     <div id="account">
       <Container>
         <div className="mt-2">
-          <Header headerInfo={headerInfo} />
+          <Header {...headerInfo} />
         </div>
         <div className="mb-4 mt-3" id="mem-student-div">
           <Facts factsInfo={factsInfo} />

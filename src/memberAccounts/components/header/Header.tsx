@@ -3,14 +3,12 @@ import { Row, Col } from "react-bootstrap";
 import SeparatedInfo from "../separatedInfo/SeparatedInfo";
 
 type HeaderType = {
-  headerInfo: {
-    fullName: string;
-    profession: string;
-    summary: string;
-    separated: SeparatedType;
-    about: string;
-    image: string;
-  };
+  fullName: string;
+  profession: string;
+  summary: string;
+  separated: SeparatedType;
+  about: string;
+  image: string;
 };
 
 type SeparatedType = {
@@ -22,14 +20,15 @@ type SeparatedType = {
   Website: string;
 };
 
-function Header(props: HeaderType) {
-  const fullName = props.headerInfo.fullName;
-  const profession = props.headerInfo.profession;
-  const summary = props.headerInfo.summary;
-  const about = props.headerInfo.about;
-  const separated = props.headerInfo.separated;
-  const image = props.headerInfo.image;
-
+function Header({
+  fullName,
+  profession,
+  summary,
+  about,
+  separated,
+  image,
+}: HeaderType) {
+  
   return (
     <div>
       <Row id="acc-header">
