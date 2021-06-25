@@ -11,16 +11,10 @@ type ProjectType = {
   sourcePath: string;
 };
 
-function Projects(props: ProjectsType) {
-  const projects = props.projectsInfo;
+function Projects({projectsInfo}: ProjectsType) {
   let row: any = [];
 
-  projects.forEach((project) => {
-    const name = project.name;
-    const image = project.image;
-    const deployPath = project.deployPath;
-    const sourcePath = project.sourcePath;
-
+  projectsInfo.forEach(({name, image, deployPath, sourcePath}) => {
     row.push(
       <Col className="mb-4">
         <Project

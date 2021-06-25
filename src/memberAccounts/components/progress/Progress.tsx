@@ -10,15 +10,10 @@ type SkillType = {
   percent: number;
 };
 
-function Progress(props: ProgressType) {
-  const skills = props.skillsInfo;
+function Progress({skillsInfo}: ProgressType) {
   let row: any = [];
 
-  skills.forEach((skill) => {
-    const name = skill.name;
-    const level = skill.level;
-    const percent = skill.percent;
-
+  skillsInfo.forEach(({name, level, percent}) => {
     row.push(
       <Col className="my-1">
         <ProgressElement skill={name} level={level} percent={percent} />

@@ -9,12 +9,7 @@ type ProjectType = {
   sourcePath: string,
 }
 
-function Project(props: ProjectType) {
-  const name = props.name;
-  const image = props.image;
-  const deployPath = props.deployPath;
-  const sourcePath = props.sourcePath;
-
+function Project({name, image, deployPath, sourcePath}: ProjectType) {
   return (
     <div className="project">
       <div>

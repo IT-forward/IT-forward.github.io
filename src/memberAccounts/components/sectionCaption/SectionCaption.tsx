@@ -4,8 +4,7 @@ type SectionCaptionType = {
   caption: string,
 };
 
-function SectionCaption(props: SectionCaptionType) {
-  const caption = props.caption;
+function SectionCaption({caption}: SectionCaptionType) {
   return (
     <div className="hr-line">
       <span>{caption}</span>

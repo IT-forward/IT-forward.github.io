@@ -7,12 +7,7 @@ type TestimonialType = {
   image: string,
 };
 
-function Testimonial(props: TestimonialType) {
-  const name = props.name;
-  const profession = props.profession;
-  const opinion = props.opinion;
-  const image = props.image;
-
+function Testimonial({name, profession, opinion, image}: TestimonialType) {
   return (
     <div className="testimonail-div p-4">
       <div className="d-flex align-items-center">

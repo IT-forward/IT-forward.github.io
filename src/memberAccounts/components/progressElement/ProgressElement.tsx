@@ -7,11 +7,7 @@ type ProgressElementType = {
   percent: number,
 }
 
-function ProgressElement(props: ProgressElementType) {
-  const skill = props.skill;
-  const level = props.level;
-  const percent = props.percent;
-
+function ProgressElement({skill, level, percent}: ProgressElementType) {
   return (
     <div>
       <div className="d-flex align-items-center justify-content-between">

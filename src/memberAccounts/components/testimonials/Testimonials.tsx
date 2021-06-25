@@ -11,16 +11,10 @@ type TestimonialType = {
   opinion: string;
 };
 
-function Testimonials(props: TestimonialsType) {
-  const testimonials = props.testimonialsInfo;
+function Testimonials({testimonialsInfo}: TestimonialsType) {
   let row: any = [];
 
-  testimonials.forEach((testimonial) => {
-    const name = testimonial.name;
-    const profession = testimonial.profession;
-    const opinion = testimonial.opinion;
-    const image = testimonial.image;
-
+  testimonialsInfo.forEach(({name, profession, opinion, image}) => {
     row.push(
       <Col>
         {

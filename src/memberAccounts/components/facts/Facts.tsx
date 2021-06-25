@@ -11,15 +11,10 @@ type FactType = {
   type: string;
 };
 
-function Facts(props: FactsType) {
-  const facts = props.factsInfo;
+function Facts({factsInfo}: FactsType) {
   const row: any = []; // what is row's type now?
 
-  facts.forEach((fact, index) => {
-    const icon = fact.icon;
-    const numbers = fact.numbers;
-    const type = fact.type;
-
+  factsInfo.forEach(({icon, numbers, type}, index) => {
     row.push(
       <Col className="text-center py-3 student-border" id={`student-${index}`}>
         <Fact icon={icon} nums={numbers} type={type} />
