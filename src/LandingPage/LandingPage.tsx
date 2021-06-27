@@ -23,16 +23,15 @@ function LandingPage() {
                   id="desc-paragraph"
                   className="mt-md-2 mb-md-4 mt-lg-4 mb-lg-5"
                 >
-                  "Pay IT Forward" saytda siz web-dasturlash uchun eng optimal
-                  yo'l xaritasini topishingiz mumkin.
+                  Adashmadingiz, o‘qish rostan tekin ammo boshqalarga o‘rgatish sharti bilan.
                 </p>
                 <div>
-                  <Link to='/batafsil-malumot'>
+                  <Link to='/introduction'>
                   <button
                     className="btn btn-lg btn-danger border-0"
                     id="desc-btn"
                   >
-                    Batafsil
+                    Biz haqimizda
                   </button>
                   </Link>
                 </div>
@@ -48,14 +47,14 @@ function LandingPage() {
         <section id="features">
           <Row xs={1} sm={1} md={2}>
             <Col id="feature-image">
-              <img src={featuresImg} className="img-fluid" alt="" />
+              <img src={featuresImg} className="img-fluid images" alt="" />
             </Col>
 
             <Col className="pl-md-5 d-md-flex align-items-end">
               <Row>
                 <Col id="features-desc">
                   <h2>PAY IT FORWARD jamoasiga qo'shiling!</h2>
-                  <p className="my-md-2 my-lg-3">
+                  <p className="my-md-2 my-lg-3 p-0">
                     Dasturlashni puxta o'rganishingiz uchun quyidagi talablarga
                     javob berishingiz kerak:
                   </p>

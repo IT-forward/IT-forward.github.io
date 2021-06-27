@@ -26,12 +26,13 @@ import REDUX from "./course-images/redux.png";
 import TYPESCRIPT from "./course-images/typescript.png";
 import MONGODB from "./course-images/mongodb.png";
 import REACT from "./course-images/react.png";
-
+import LessonPage  from "./components/LessonPage";
 export const lessonsData = {
   html: {
     title: "HTML5",
     iconComponent: <AiFillHtml5 className="icon-group html" />,
     lessonImage: { HTML },
+    path: 'lesson-course',
     description: `
       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
@@ -248,3 +249,6 @@ export const roadmapData = [
     ],
   },
 ];
+
+
+<LessonPage htmlData={lessonsData.html}/>

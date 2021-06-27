@@ -4,7 +4,8 @@ import Roadmap from '../Roadmap/Roadmap';
 import orgChart from '../orgChart/OrgChartTree';
 import Introduction from '../LandingPage/Introduction';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
+import LessonPage from '../Roadmap/components/LessonPage';
+//import Test from '../Roadmap/testComponent';
 
 function ReactRouter() {
     return (
@@ -12,9 +13,11 @@ function ReactRouter() {
             <div>
                 <Switch>
                     <Route path="/" exact component={Landingpage}/>
-                    <Route path="/yo'l-xaritasi"  component={Roadmap} />
-                    <Route path="/azolar-daraxti"  component={orgChart} />
-                    <Route path="/batafsil-malumot"  component={Introduction} />
+                    <Route path="/roadmap" exact  component={Roadmap} />
+                    <Route path="/organization-tree" exact component={orgChart} />
+                    <Route path="/introduction" exact component={Introduction} />
+                    <Route path='/lesson-course' exact component={LessonPage} />
+                   
                 </Switch>
             </div>
         </Router>

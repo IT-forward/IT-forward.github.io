@@ -5,7 +5,7 @@ import Lesson from "./components/Lesson";
 import Navbar from '../LandingPage/Navbar';
 import Footer from '../LandingPage/Footer';
 import { roadmapData } from "./data";
-
+import { Link } from 'react-router-dom';
 function Roadmap() {
   return (
     <div>
@@ -21,12 +21,17 @@ function Roadmap() {
             <Chapter iconComponent={chapter.iconComponent} />
             {chapter.children.map((roadmapRow) => (
               <RoadmapRow>
+                
                 {roadmapRow.map((lesson) => (
+                  <Link to='/lesson-course'>
                   <Lesson
                     title={lesson.title}
                     icon={lesson.iconComponent}
                   />
+                   </Link>
                 ))}
+               
+               
               </RoadmapRow>
             ))}
           </div>

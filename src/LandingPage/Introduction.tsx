@@ -7,7 +7,7 @@ function Introduction() {
       <Navbar />
       <Container>
         <br />
-        <h2 className="text-center">
+        <h2 className="text-center mt-4 ">
           Quyida "Pay IT Forward" website🌐 haqida qisqacha ma'lumot beriladi.
         </h2>
         <hr />

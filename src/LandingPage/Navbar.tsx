@@ -17,23 +17,23 @@ function NavbarNavigation() {
                 id="responsive-navbar-nav"
                 >
                 <Nav>
-                    <Link className="navStyle" to="/yo'l-xaritasi">
-                    <Nav.Link href="/yo'l-xaritasi" id="nav-link-1" className="px-0">
+                    <Link className="navStyle" to="/roadmap">
+                    <Nav.Link href="/roadmap" id="nav-link-1" className="px-0">
                     Yo'l xatirasi
                     </Nav.Link>
                     </Link>
-                    <Link className="navStyle" to="/azolar-daraxti">
-                    <Nav.Link href="/azolar-daraxti" id="nav-link-2" className="px-0">
+                    <Link className="navStyle" to="/organization-tree">
+                    <Nav.Link href="/organization-tree" id="nav-link-2" className="px-0">
                     A'zolar daraxti
                     </Nav.Link>
                     </Link>
-                    <Link className="navStyle" to="/batafsil-malumot">
+                    <Link className="navStyle" to="/introduction">
                     <Nav.Link
-                    href="/batafsil-malumot"
+                    href="/introduction"
                     id="nav-link-3"
                     className="px-0 mr-0"
                     >
-                        Batafsil
+                        Biz haqimizda
                     </Nav.Link>
                     </Link>
                 </Nav>
