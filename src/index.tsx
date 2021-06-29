@@ -16,11 +16,11 @@ const member: MemberType  = {
     Inventore itaque architecto ea labore veniam!`,
     separated: [
       { City: "something" },
-      { City: "something" },
-      { City: "something" },
-      { City: "something" },
+      { Phone: "something" },
+      { Email: "something" },
       { City: "something" },
       { Phone: "something" },
+      { Email: "something" },
     ],
     about: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
   Consectetur molestiae, alias explicabo consequuntur itaque quisquam repellat eos magnam doloremque, 
