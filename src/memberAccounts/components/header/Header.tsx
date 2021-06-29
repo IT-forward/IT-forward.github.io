@@ -11,14 +11,15 @@ type HeaderType = {
   image: string;
 };
 
-type SeparatedType = {
-  City: string;
-  Phone: string;
-  Email: string;
-  Degree: string;
-  Freelance: string;
-  Website: string;
-};
+// type SeparatedType = {
+//   City: string;
+//   Phone: string;
+//   Email: string;
+//   Degree: string;
+//   Freelance: string;
+//   Website: string;
+// };
+type SeparatedType = {[prop: string]: string}[];
 
 function Header({
   fullName,
@@ -45,7 +46,7 @@ function Header({
           <h3 className="text-center text-md-left">{profession}</h3>
           <p>{summary}</p>
           <div className="my-2">
-            <SeparatedInfo emphasisedInfo={separated} />
+            <SeparatedInfo separatedInfo={separated} />
           </div>
           <p className="d-md-none d-lg-block">{about}</p>
         </Col>

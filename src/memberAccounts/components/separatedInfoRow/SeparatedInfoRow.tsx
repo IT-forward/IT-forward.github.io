@@ -1,10 +1,9 @@
-function SeparatedInfoRow(props: any) {
-  const emphasis = props.emphasis;
-  const value = props.value;
+type SeparatedInfoRowType = {[prop: string]: string};
 
+function SeparatedInfoRow({prop, value}: SeparatedInfoRowType) {
   return (
     <div className="d-inline-block">
-      <span className="font-weight-bold mr-2">{emphasis}:</span> {value}
+      <span className="font-weight-bold mr-2">{prop}:</span> {value}
     </div>
   );
 }

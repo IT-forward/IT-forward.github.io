@@ -7,7 +7,7 @@ import Progress from "./components/progress/Progress";
 import Projects from "./components/projects/Projects";
 import Testimonials from "./components/testimonials/Testimonials";
 
-type MemberType = {
+export type MemberType = {
   memberInfo: {
     fullName: string;
     profession: string;
@@ -21,15 +21,7 @@ type MemberType = {
     testimonials: TestimonialsType;
   };
 };
-
-type SeparatedType = {
-  City: string;
-  Phone: string;
-  Email: string;
-  Degree: string;
-  Freelance: string;
-  Website: string;
-};
+type SeparatedType = {[prop: string]: string}[];
 type FactsType = Array<FactType>;
 type FactType = {
   icon: JSX.Element;
