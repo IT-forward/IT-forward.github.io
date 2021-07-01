@@ -18,9 +18,9 @@ const member: MemberType  = {
       { City: "something" },
       { Phone: "something" },
       { Email: "something" },
-      { City: "something" },
-      { Phone: "something" },
-      { Email: "something" },
+      { Freelance: "something" },
+      { Website: "something" },
+      { Degree: "something" },
     ],
     about: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
   Consectetur molestiae, alias explicabo consequuntur itaque quisquam repellat eos magnam doloremque, 

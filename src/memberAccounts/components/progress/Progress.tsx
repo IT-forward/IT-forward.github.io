@@ -13,9 +13,9 @@ type SkillType = {
 function Progress({skillsInfo}: ProgressType) {
   let row: any = [];
 
-  skillsInfo.forEach(({name, level, percent}) => {
+  skillsInfo.forEach(({name, level, percent}, id) => {
     row.push(
-      <Col className="my-1">
+      <Col className="my-1" key={id} >
         <ProgressElement skill={name} level={level} percent={percent} />
       </Col>
     );

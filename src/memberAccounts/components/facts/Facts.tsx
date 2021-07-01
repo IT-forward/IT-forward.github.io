@@ -16,7 +16,7 @@ function Facts({factsInfo}: FactsType) {
 
   factsInfo.forEach(({icon, numbers, type}, index) => {
     row.push(
-      <Col className="text-center py-3 student-border" id={`student-${index}`}>
+      <Col className="text-center py-3 student-border" id={`student-${index}`} key={index} >
         <Fact icon={icon} nums={numbers} type={type} />
       </Col>
     );

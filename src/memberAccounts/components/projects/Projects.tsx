@@ -14,9 +14,9 @@ type ProjectType = {
 function Projects({projectsInfo}: ProjectsType) {
   let row: any = [];
 
-  projectsInfo.forEach(({name, image, deployPath, sourcePath}) => {
+  projectsInfo.forEach(({name, image, deployPath, sourcePath}, id) => {
     row.push(
-      <Col className="mb-4">
+      <Col className="mb-4" key={id} >
         <Project
           name={name}
           image={image}

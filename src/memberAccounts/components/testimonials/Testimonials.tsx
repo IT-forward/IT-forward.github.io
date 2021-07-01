@@ -14,9 +14,9 @@ type TestimonialType = {
 function Testimonials({testimonialsInfo}: TestimonialsType) {
   let row: any = [];
 
-  testimonialsInfo.forEach(({name, profession, opinion, image}) => {
+  testimonialsInfo.forEach(({name, profession, opinion, image}, id) => {
     row.push(
-      <Col>
+      <Col key={id} >
         {
           <Testimonial
             name={name}

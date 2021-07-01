@@ -1,16 +1,17 @@
 import { Row, Col } from "react-bootstrap";
 import SeparatedInfoRow from "../separatedInfoRow/SeparatedInfoRow";
 
-type SeparatedInfoType = {}[];
+type SeparatedInfoType = {
+  separatedInfo: {[prop: string]: string}[],
+};
 
-function SeparatedInfo(props: any) {
-  const separatedInfo = props.separatedInfo;
+function SeparatedInfo({separatedInfo}: SeparatedInfoType) {
   let row: any = [];
 
-  separatedInfo.forEach((el: any) => {
+  separatedInfo.forEach((el: {[prop: string]: string}, id) => {
     for (const prop in el) {
       row.push(
-        <Col className="acc-info">
+        <Col className="acc-info" key={id}>
           <SeparatedInfoRow
             prop={prop}
             value={el[prop]}
@@ -20,16 +21,6 @@ function SeparatedInfo(props: any) {
     }
   });
 
-  // for (const emphasis in emphasisedInfo) {
-  //   row.push(
-  //     <Col className="acc-info">
-  //       <SeparatedInfoRow
-  //         emphasis={emphasis}
-  //         value={emphasisedInfo[emphasis]}
-  //       />
-  //     </Col>
-  //   );
-  // }
   return (
     <Row xs={1} lg={2}>
       {row}

@@ -10,15 +10,6 @@ type HeaderType = {
   about: string;
   image: string;
 };
-
-// type SeparatedType = {
-//   City: string;
-//   Phone: string;
-//   Email: string;
-//   Degree: string;
-//   Freelance: string;
-//   Website: string;
-// };
 type SeparatedType = {[prop: string]: string}[];
 
 function Header({
