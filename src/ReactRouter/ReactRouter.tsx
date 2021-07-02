@@ -5,7 +5,7 @@ import orgChart from '../orgChart/OrgChartTree';
 import Introduction from '../LandingPage/Introduction';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import LessonPage from '../Roadmap/components/LessonPage';
-//import Test from '../Roadmap/testComponent';
+
 
 function ReactRouter() {
     return (
@@ -13,11 +13,11 @@ function ReactRouter() {
             <div>
                 <Switch>
                     <Route path="/" exact component={Landingpage}/>
-                    <Route path="/roadmap" exact  component={Roadmap} />
-                    <Route path="/organization-tree" exact component={orgChart} />
-                    <Route path="/introduction" exact component={Introduction} />
-                    <Route path='/lesson-course' exact component={LessonPage} />
-                   
+                    <Route path="/roadmap"   component={Roadmap} />
+                    <Route path="/organization-tree"  component={orgChart} />
+                    <Route path="/introduction"  component={Introduction} />
+                    <Route path="/lessons/:id"  component={LessonPage} />
+                    
                 </Switch>
             </div>
         </Router>

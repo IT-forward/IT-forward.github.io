@@ -6,6 +6,8 @@ import Navbar from '../LandingPage/Navbar';
 import Footer from '../LandingPage/Footer';
 import { roadmapData } from "./data";
 import { Link } from 'react-router-dom';
+
+
 function Roadmap() {
   return (
     <div>
@@ -16,20 +18,22 @@ function Roadmap() {
         <span>Pay IT Forward</span> jamoasining dasturlashni o'rganish xaritasi
       </h2>
       {roadmapData.map((chapter) => {
+
         return (
           <div>
             <Chapter iconComponent={chapter.iconComponent} />
             {chapter.children.map((roadmapRow) => (
               <RoadmapRow>
-                
-                {roadmapRow.map((lesson) => (
-                  <Link to='/lesson-course'>
+               
+               
+
+                  <Link to={{pathname: `/lessons/${roadmapRow.path}` }}>
                   <Lesson
-                    title={lesson.title}
-                    icon={lesson.iconComponent}
+                    title={roadmapRow.title}
+                    icon={roadmapRow.iconComponent}
                   />
                    </Link>
-                ))}
+                  
                
                
               </RoadmapRow>

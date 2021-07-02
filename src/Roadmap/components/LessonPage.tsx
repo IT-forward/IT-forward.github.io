@@ -1,8 +1,21 @@
 import '../components/LessonPage.css';
 import { Container } from 'react-bootstrap';
-//import {lessonsData} from '../data';
-function LessonPage(props : any
-//     {
+import { useParams } from 'react-router-dom';
+import  { lessonsData } from '../data';
+import { useState } from 'react';
+import { useEffect } from 'react';
+interface paramtypes  {
+    id: string
+}
+export type LessonType = {
+    title: string,
+    lessonImage?: string,
+    path?: string,
+    description?: string,
+    iconComponent: JSX.Element
+}
+function LessonPage(
+//     props : {
 //     title: string,
 //     lessonImage: string,
 //     path: string,
@@ -10,16 +23,33 @@ function LessonPage(props : any
 //     iconComponent: JSX.Element
 // }
 ) { 
-   // console.log(lessonsData);
-   
-    console.log(props.htmlData);
-    return (
+   // @ts-ignore
+   const [item, setItem] = useState<LessonType | undefined>();
 
-        <Container id="htmlLesson">
-            <h1 className="text-center mt-5">{props.title}</h1>
-            <img className="d-block m-auto" src={props.lessonImage} alt="" />
-                {props.description}
 
+  const  { id }  = useParams<paramtypes>();
+   console.log(id);
+
+   useEffect(() => {
+       lessonsData.find(e => (
+        (e.path === id) ? setItem(e) : null )
+        )   
+   },[])
+    console.log(item);
+
+
+
+
+   return (
+
+        <Container>
+
+            <h1>{item?.title}</h1>
+            <img src={item?.lessonImage} alt="" />
+            <p>
+                {item?.description}
+            </p>
+            
         </Container>
         
 
