@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom";
-import LandingPage from "./LandingPage/LandingPage";
+//import LandingPage from "./LandingPage/LandingPage";
 import "bootstrap/dist/css/bootstrap.css";
-// import Tree from './orgChart/OrgChartTree';
+import ReactRouter from './ReactRouter/ReactRouter';
 
-ReactDOM.render(<LandingPage />, document.getElementById("root"));
-// ReactDOM.render(<Tree />,document.getElementById('root'));
+ReactDOM.render(<ReactRouter />, document.getElementById("root"));
+

@@ -7,10 +7,12 @@ export default function Lesson({
 }) {
   return (
     <div className="image-box">
-      <a href="https://google.com" target="_blank" rel="noreferrer">
+      <div>
+
         {icon}
         <p>{title}</p>
-      </a>
+      
+      </div>
     </div>
   );
 }
