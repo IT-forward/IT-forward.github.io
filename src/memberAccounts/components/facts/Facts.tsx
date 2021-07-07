@@ -12,7 +12,7 @@ type FactType = {
 };
 
 function Facts({factsInfo}: FactsType) {
-  const row: any = []; // what is row's type now?
+  const row: JSX.Element[] = []; 
 
   factsInfo.forEach(({icon, numbers, type}, index) => {
     row.push(
@@ -23,7 +23,7 @@ function Facts({factsInfo}: FactsType) {
   });
 
   return (
-    <Row xs={1} md={3} id="students">
+    <Row xs={1} md={3} id="students" data-testid='facts'>
       {row}
     </Row>
   );

@@ -11,7 +11,7 @@ type ProjectType = {
 
 function Project({name, image, deployPath, sourcePath}: ProjectType) {
   return (
-    <div className="project">
+    <div className="project" data-testid='project-div'>
       <div>
         <div className="img-div">
           <img src={image} alt="project 1" className="img-fluid" />

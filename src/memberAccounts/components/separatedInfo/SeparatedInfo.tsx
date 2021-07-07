@@ -6,7 +6,7 @@ type SeparatedInfoType = {
 };
 
 function SeparatedInfo({separatedInfo}: SeparatedInfoType) {
-  let row: any = [];
+  let row: JSX.Element[] = [];
 
   separatedInfo.forEach((el: {[prop: string]: string}, id) => {
     for (const prop in el) {
@@ -22,7 +22,7 @@ function SeparatedInfo({separatedInfo}: SeparatedInfoType) {
   });
 
   return (
-    <Row xs={1} lg={2}>
+    <Row xs={1} lg={2} data-testid="separatedInfo">
       {row}
     </Row>
   );

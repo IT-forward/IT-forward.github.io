@@ -2,7 +2,7 @@ import "./Header.css";
 import { Row, Col } from "react-bootstrap";
 import SeparatedInfo from "../separatedInfo/SeparatedInfo";
 
-type HeaderType = {
+export type HeaderType = {
   fullName: string;
   profession: string;
   summary: string;
@@ -22,7 +22,7 @@ function Header({
 }: HeaderType) {
   
   return (
-    <div>
+    <div data-testid="header">
       <Row id="acc-header">
         <Col
           sm={12}

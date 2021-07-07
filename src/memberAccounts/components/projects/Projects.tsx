@@ -12,7 +12,7 @@ type ProjectType = {
 };
 
 function Projects({projectsInfo}: ProjectsType) {
-  let row: any = [];
+  let row: JSX.Element[] = [];
 
   projectsInfo.forEach(({name, image, deployPath, sourcePath}, id) => {
     row.push(
@@ -28,7 +28,7 @@ function Projects({projectsInfo}: ProjectsType) {
   });
 
   return (
-    <Row xs={1} md={2} lg={3}>
+    <Row xs={1} md={2} lg={3} data-testid='projects'>
       {row}
     </Row>
   );

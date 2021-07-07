@@ -11,7 +11,7 @@ type SkillType = {
 };
 
 function Progress({skillsInfo}: ProgressType) {
-  let row: any = [];
+  let row: JSX.Element[] = [];
 
   skillsInfo.forEach(({name, level, percent}, id) => {
     row.push(
@@ -22,7 +22,7 @@ function Progress({skillsInfo}: ProgressType) {
   });
 
   return (
-    <div>
+    <div data-testid="progress-div">
       <Row xs={1} md={2} id="skills">
         {row}
       </Row>

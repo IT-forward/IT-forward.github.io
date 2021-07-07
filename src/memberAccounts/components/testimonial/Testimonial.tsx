@@ -9,7 +9,7 @@ type TestimonialType = {
 
 function Testimonial({name, profession, opinion, image}: TestimonialType) {
   return (
-    <div className="testimonail-div p-4">
+    <div className="testimonail-div p-4" data-testid="testimonial-div">
       <div className="d-flex align-items-center">
         <img src={image} alt="husan" />
         <div className="ml-4">

@@ -8,7 +8,7 @@ type FactType = {
 
 function Fact({icon, nums, type}: FactType) {
   return (
-    <div className="d-inline-block">
+    <div className="d-inline-block" data-testid="fact-div">
       <div className="d-flex align-items-center">
         <div className="icon-div mr-3">
           <div className="icon">{icon}</div>

@@ -12,7 +12,7 @@ type TestimonialType = {
 };
 
 function Testimonials({testimonialsInfo}: TestimonialsType) {
-  let row: any = [];
+  let row: JSX.Element[] = [];
 
   testimonialsInfo.forEach(({name, profession, opinion, image}, id) => {
     row.push(
@@ -33,7 +33,7 @@ function Testimonials({testimonialsInfo}: TestimonialsType) {
     <div>
       <Carousel className="mb-5" interval={2000}>
         <Carousel.Item>
-          <Row xs={1} md={2} lg={3}>
+          <Row xs={1} md={2} lg={3} data-testid="testimonials-div">
             {row}
           </Row>
         </Carousel.Item>

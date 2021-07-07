@@ -9,7 +9,7 @@ type ProgressElementType = {
 
 function ProgressElement({skill, level, percent}: ProgressElementType) {
   return (
-    <div>
+    <div data-testid='progressElement-div'>
       <div className="d-flex align-items-center justify-content-between">
         <div className="skill-name font-weight-bold">{skill}</div>
         <div>{level}</div>
