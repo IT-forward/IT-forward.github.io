@@ -14,7 +14,7 @@ function Project({name, image, deployPath, sourcePath}: ProjectType) {
     <div className="project" data-testid='project-div'>
       <div>
         <div className="img-div">
-          <img src={image} alt="project 1" className="img-fluid" />
+          <img src={image} alt="project 1" className="img-fluid mx-auto" />
         </div>
       </div>
 
