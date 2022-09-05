@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 .content-name {
@@ -43,20 +43,6 @@ line-height: 1.5em;
 background: #f0f0f0;
 }
 
- 
 img {
 width: 100%;
 }
-
-/* @media (min-width: 320px) and (max-width: 767.98px) { 
-.box-1 {
-    width: 300px;
-    overflow: auto;
-  }
-  
-  .box-2 {
-    width: 800px;
-  }
-
-}
-*/
