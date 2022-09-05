@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-#body {
+#road-map {
     background-color: #fcfcfc;
     min-height: 100vh;
     font-weight: bold;
@@ -61,14 +61,14 @@
     color: #000;
     padding: 3px;
     font-weight: 700;
-    
+
 }
 
 .image-box-group {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;   
+    text-align: center;
 }
 
 .image-box-group .image-box {
@@ -78,7 +78,7 @@
 
 .image-box-group a , .image-box-group .image-box a  {
     text-decoration: none;
-    color: #000;   
+    color: #000;
 }
 
 p {
@@ -116,7 +116,7 @@ p {
 
 /* Responsive - Mobile version */
 
-   @media (max-width: 575.98px) { 
+   @media (max-width: 575.98px) {
     .roadmap-name {
         font-size: 25px;
     }
@@ -132,10 +132,10 @@ p {
         width: 150px;
         height: 1px;
     }
-   
+
  }
 
-@media (min-width: 321px) and (max-width: 575.98px) { 
+@media (min-width: 321px) and (max-width: 575.98px) {
     .roadmap-name {
         font-size: 25px;
     }
@@ -152,7 +152,7 @@ p {
     }
  }
 
-  @media (max-width: 320px) { 
+  @media (max-width: 320px) {
     .roadmap-name {
         font-size: 20px;
     }
@@ -168,5 +168,5 @@ p {
         height: 1px;
     }
  }
- 
+
 

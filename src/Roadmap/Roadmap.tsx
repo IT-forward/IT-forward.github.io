@@ -13,7 +13,7 @@ function Roadmap() {
     <div>
 
     <Navbar />
-    <div id="body">
+    <div id="road-map">
       <h2 className="roadmap-name">
         <span>Pay IT Forward</span> jamoasining dasturlashni o'rganish xaritasi
       </h2>
@@ -24,24 +24,17 @@ function Roadmap() {
             <Chapter iconComponent={chapter.iconComponent} />
             {chapter.children.map((roadmapRow) => (
               <RoadmapRow>
-               
-               
-
                   <Link to={{pathname: `/lessons/${roadmapRow.path}` }}>
                   <Lesson
                     title={roadmapRow.title}
                     icon={roadmapRow.iconComponent}
                   />
                    </Link>
-                  
-               
-               
               </RoadmapRow>
             ))}
           </div>
         );
       })}
-  
     </div>
     <Footer />
     </div>
