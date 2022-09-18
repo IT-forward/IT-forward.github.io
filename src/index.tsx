@@ -1,5 +1,8 @@
 import "bootstrap/dist/css/bootstrap.css";
 import ReactDOM from "react-dom";
-import LandingPage from "./LandingPage/LandingPage";
+import Screen from "./memberAccounts/Screen";
+// import LandingPage from "./LandingPage/LandingPage";
 
-ReactDOM.render(<LandingPage />, document.getElementById("root"));
+const screen = Screen({id: 0});
+
+ReactDOM.render(screen, document.getElementById("root"));
