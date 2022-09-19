@@ -1,5 +1,7 @@
-import { Row, Col, Carousel } from "react-bootstrap";
-import Testimonial from "../testimonial/Testimonial";
+import './Testimonials.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
+import Testimonial from '../testimonial/Testimonial';
 
 type TestimonialsType = {
   testimonialsInfo: Array<TestimonialType>;
@@ -12,33 +14,19 @@ type TestimonialType = {
 };
 
 function Testimonials({testimonialsInfo}: TestimonialsType) {
-  let row: any = [];
-
-  testimonialsInfo.forEach(({name, profession, opinion, image}, id) => {
-    row.push(
-      <Col key={id} >
-        {
-          <Testimonial
-            name={name}
-            profession={profession}
-            opinion={opinion}
-            image={image}
-          />
-        }
-      </Col>
-    );
-  });
-
   return (
-    <div>
-      <Carousel className="mb-5" interval={2000}>
-        <Carousel.Item>
-          <Row xs={1} md={2} lg={3}>
-            {row}
-          </Row>
-        </Carousel.Item>
-      </Carousel>
-    </div>
+    <Carousel
+          showArrows={true}
+          infiniteLoop={true}
+          showThumbs={false}
+          showStatus={false}
+          autoPlay={true}
+          interval={6100}
+        >
+          {
+            testimonialsInfo.map(tes => <Testimonial {...tes} />)
+          }
+        </Carousel>
   );
 }
 
