@@ -1,8 +1,7 @@
-import "bootstrap/dist/css/bootstrap.css";
 import ReactDOM from "react-dom";
-import Screen from "./memberAccounts/Screen";
-// import LandingPage from "./LandingPage/LandingPage";
+//import LandingPage from "./LandingPage/LandingPage";
+import "bootstrap/dist/css/bootstrap.css";
+import ReactRouter from './ReactRouter/ReactRouter';
 
-const screen = Screen({id: 0});
+ReactDOM.render(<ReactRouter />, document.getElementById("root"));
 
-ReactDOM.render(screen, document.getElementById("root"));
