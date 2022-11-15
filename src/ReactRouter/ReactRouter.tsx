@@ -5,6 +5,7 @@ import orgChart from '../orgChart/OrgChartTree';
 import Introduction from '../LandingPage/Introduction';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import LessonPage from '../Roadmap/components/LessonPage';
+import Screen from '../memberAccounts/Screen';
 
 
 function ReactRouter() {
@@ -17,7 +18,7 @@ function ReactRouter() {
                     <Route path="/organization-tree"  component={orgChart} />
                     <Route path="/introduction"  component={Introduction} />
                     <Route path="/lessons/:id"  component={LessonPage} />
-                    
+                    <Route path="/member_account/:id" component={Screen} />
                 </Switch>
             </div>
         </Router>

@@ -1,10 +1,15 @@
-import memberImg from "./memberImages/husan-img.jpg";
+import husanImg from "./memberImages/husan-img.jpg";
 import projectImg from "./projectImages/project1.png";
 import { BsFillPersonFill } from "react-icons/bs";
 import { MemberType } from "./MemAccount";
 import MemAccount from "./MemAccount";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 type DataType = { id: number; member: MemberType }[];
+interface ParamTypes  {
+  id: string
+}
 
 const data: DataType = [
   {
@@ -13,7 +18,7 @@ const data: DataType = [
       memberInfo: {
         fullName: "Husan Eshonqulov",
         profession: "Web Developer",
-        summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Inventore itaque architecto ea labore veniam!`,
         separated: [
           { City: "something" },
@@ -23,10 +28,10 @@ const data: DataType = [
           { Website: "something" },
           { Degree: "something" },
         ],
-        about: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-        Consectetur molestiae, alias explicabo consequuntur itaque quisquam repellat eos magnam doloremque, 
+        about: `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Consectetur molestiae, alias explicabo consequuntur itaque quisquam repellat eos magnam doloremque,
         maxime possimus amet nulla et quia non at ad. Reprehenderit enim molestias.`,
-        image: memberImg,
+        image: husanImg,
         facts: [
           {
             icon: <BsFillPersonFill />,
@@ -124,21 +129,21 @@ const data: DataType = [
           {
             name: "Husan Eshonqulov",
             profession: "Web Developer",
-            image: memberImg,
+            image: husanImg,
             opinion:
               "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
           },
           {
             name: "Husan Eshonqulov",
             profession: "Web Developer",
-            image: memberImg,
+            image: husanImg,
             opinion:
               "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
           },
           {
             name: "Husan Eshonqulov",
             profession: "Web Developer",
-            image: memberImg,
+            image: husanImg,
             opinion:
               "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
           },
@@ -152,7 +157,7 @@ const data: DataType = [
       memberInfo: {
         fullName: "Husan Eshonqulov",
         profession: "Web Developer",
-        summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Inventore itaque architecto ea labore veniam!`,
         separated: [
           { City: "something" },
@@ -162,10 +167,10 @@ const data: DataType = [
           { Website: "something" },
           { Degree: "something" },
         ],
-        about: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-        Consectetur molestiae, alias explicabo consequuntur itaque quisquam repellat eos magnam doloremque, 
+        about: `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Consectetur molestiae, alias explicabo consequuntur itaque quisquam repellat eos magnam doloremque,
         maxime possimus amet nulla et quia non at ad. Reprehenderit enim molestias.`,
-        image: memberImg,
+        image: husanImg,
         facts: [
           {
             icon: <BsFillPersonFill />,
@@ -263,21 +268,21 @@ const data: DataType = [
           {
             name: "Husan Eshonqulov",
             profession: "Web Developer",
-            image: memberImg,
+            image: husanImg,
             opinion:
               "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
           },
           {
             name: "Husan Eshonqulov",
             profession: "Web Developer",
-            image: memberImg,
+            image: husanImg,
             opinion:
               "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
           },
           {
             name: "Husan Eshonqulov",
             profession: "Web Developer",
-            image: memberImg,
+            image: husanImg,
             opinion:
               "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus.",
           },
@@ -287,8 +292,20 @@ const data: DataType = [
   },
 ];
 
-function Screen({ id }: { id: number }) {
-  return <MemAccount {...data[id].member} />;
+function Screen() {
+  const [member, setMember] = useState<MemberType | undefined>();
+
+  const  { id }  = useParams<ParamTypes>();
+  const idInt = parseInt(id) || 0;
+  useEffect(() => {
+    setMember(data[idInt]?.member);
+  }, []);
+
+  if(member) {
+    return <MemAccount {...member} />;
+  } else {
+    return <></>;
+  }
 }
 
 export default Screen;

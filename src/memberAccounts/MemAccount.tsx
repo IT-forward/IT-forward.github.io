@@ -85,7 +85,7 @@ function MemAccount(props: MemberType) {
           <Projects projectsInfo={projectsInfo} />
         </div>
         <div className="section-div">
-          <SectionCaption caption="TESTIMONAILS" />
+          <SectionCaption caption="TESTIMONIALS" />
         </div>
         <div>
           <Testimonials testimonialsInfo={testimonialsInfo} />
