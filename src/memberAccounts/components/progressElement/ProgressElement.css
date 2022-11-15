@@ -1,0 +1,13 @@
+.skill-name {
+  font-size: 14px;
+  color: #0b132a;
+}
+
+.bg-red-bar {
+  background-color: #f53838 !important;
+}
+
+.progress-thiner {
+  height: 12px !important;
+  border-radius: 14px !important;
+}

@@ -1,0 +1,16 @@
+.icon {
+  font-size: 18px;
+  color: #f53838;
+}
+
+.icon-div {
+  padding: 6px 10px;
+  background-color: #ffecec;
+  border-radius: 50%;
+}
+
+.student-number {
+  font-size: 20px;
+  line-height: 21px;
+  color: #0b132a;
+}
