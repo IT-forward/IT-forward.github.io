@@ -18,7 +18,7 @@ function ReactRouter() {
                     <Route path="/organization-tree"  component={orgChart} />
                     <Route path="/introduction"  component={Introduction} />
                     <Route path="/lessons/:id"  component={LessonPage} />
-                    <Route path="/member_account/:id" component={Screen} />
+                    <Route path="/member-account/:id" component={Screen} />
                 </Switch>
             </div>
         </Router>
