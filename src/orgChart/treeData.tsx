@@ -5,35 +5,65 @@ import husan from "./images/husan.png";
 import oybek from "./images/oybek.png";
 import "./OrgChart.css";
 
-export const treeData = {
-  id: 1,
-  fullName: "Bahriddin Abdiev",
-  image: bahriddin,
-  students: [
-    {
-      id: 2,
-      fullName: "Eldor Ergashov",
-      image: eldor,
-      finished: false,
-    },
-    {
-      id: 3,
-      fullName: "Otabek Kadirov",
-      image: otabek,
-      finished: false,
-      students: [],
-    },
-    {
-      id: 4,
-      fullName: "Husan Eshonqulov",
-      image: husan,
-      finished: false,
-    },
-    {
-      id: 5,
-      fullName: "Oybek Turaev",
-      image: oybek,
-      finished: true,
-    },
-  ],
+const people = {
+  "bahriddin-abdiev": {
+    fullName: "Bahriddin Abdiev",
+    image: bahriddin,
+    finished: true,
+    students: [
+      "eldor-ergashov",
+      "otabek-kadirov",
+      "husan-eshonqulov",
+      "oybek-turaev",
+    ],
+  },
+  "eldor-ergashov": {
+    fullName: "Eldor Ergashov",
+    image: eldor,
+    finished: true,
+    students: ["shohrux-kazakoff"],
+  },
+  "otabek-kadirov": {
+    fullName: "Otabek Kadirov",
+    image: otabek,
+    finished: true,
+    students: [],
+  },
+  "husan-eshonqulov": {
+    fullName: "Husan Eshonqulov",
+    image: husan,
+    finished: true,
+    students: [],
+  },
+  "oybek-turaev": {
+    fullName: "Oybek Turaev",
+    image: oybek,
+    finished: true,
+    students: [],
+  },
+  "shohrux-kazakoff": {
+    fullName: "Shohrux Kazakoff",
+    image: otabek,
+    finished: false,
+    students: [],
+  },
 };
+
+Object.keys(people).forEach((personId) => {
+  // @ts-ignore
+  const person = people[personId];
+
+  setMentor(people, personId, person.students);
+});
+
+// @ts-ignore
+function setMentor(people, personId, students) {
+  // @ts-ignore
+  students.forEach((studentId) => {
+    // @ts-ignore
+    const student = people[studentId];
+    student.mentorId = personId;
+  });
+}
+
+export default people;
