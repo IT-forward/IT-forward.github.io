@@ -1,38 +1,39 @@
-body {
+.lessons-page {
   font-family: "Roboto", sans-serif;
+  margin-top: 25px;
 }
 
-.content-name {
+.lessons-page .content-name {
 font-size: 19px;
 }
 
-p a {
+.lessons-page p a {
 color: #0a0a23;
 text-decoration: underline;
 }
-p a:hover {
+.lessons-page p a:hover {
 color: #0a0a23;
 text-decoration: none;
 }
 
-button {
+.lessons-page button {
 background-color: #F53838;
 }
 
-button:hover {
+.lessons-page button:hover {
 background-color: #0371e8;
 }
-button a {
+.lessons-page button a {
 color: #fff;
 }
 
-button a:hover {
+.lessons-page button a:hover {
 color: #f0f0f0;
 text-decoration: none;
 transition: 0.6s;
 }
 
-pre {
+.lessons-page pre {
 overflow-x: auto;
 margin: 1.5em 0 3em;
 padding: 20px;
@@ -43,6 +44,6 @@ line-height: 1.5em;
 background: #f0f0f0;
 }
 
-img {
+.lessons-page img {
 width: 100%;
 }
