@@ -1,7 +1,7 @@
-import { AiFillHtml5 } from "react-icons/ai";
+import { AiFillCode, AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { DiSass } from "react-icons/di";
-import { FaLinux } from "react-icons/fa";
+import { FaBook, FaFlagCheckered, FaUniversity } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { SiNetlify } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
@@ -13,8 +13,8 @@ import { SiRedux } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { GrNode } from "react-icons/gr";
 import { DiMongodb } from "react-icons/di";
-import HTML from "./course-images/html.png";
-import CSS from "./course-images/css.png";
+import CS50 from "./course-images/cs50.jpg";
+import Odin from "./course-images/odin.svg";
 import BOOTSTRAP from "./course-images/bootstrap.png";
 import SASS from "./course-images/sass.png";
 import GIT from "./course-images/git.png";
@@ -29,34 +29,31 @@ import REACT from "./course-images/react.png";
 import { LessonType } from "./components/LessonPage";
 export const lessonsData: LessonType[]  = [
  {
-  title: "HTML5",
-  iconComponent: <AiFillHtml5 className="icon-group html" />,
-  lessonImage:  HTML ,
-  path: 'html',
+  title: "CS50",
+  iconComponent: <FaUniversity className="icon-group cs50" />,
+  lessonImage:  CS50 ,
+  path: 'cs50',
   description: `
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
-    tenetur cumque vero exercitationem qupathem veniam placeat 
-    doloribus quibusdam nobis eos recusandae quo esse illo qui
-     quae commodi laudantium necessitatibus vitae repudiandae. 
-     Atque architecto accusamus, itaque recusandae facere harum 
-     quaerat dolores consequuntur quas? Hic, vel.
-  `
+    Dunyodagi eng nufuzli universitetlardan biri bo'lgan Garvard universiteti 
+    tomonidan o'qitiladigan CS50 dasturlashga kirish fani ham qiziqarli, ham barcha
+    asosiy tushunchalarni o'zida qamrab olgan kursdir. Shuning uchun ham biz uni
+    birinchilardan o'rganiladigan dars sifatida tanlab oldik.
+  `,
+  url: 'https://cs50.harvard.edu/x',
  }, 
  {
-  title: "CSS3",
-  iconComponent: <DiCss3 className="icon-group css" />,
-  lessonImage: CSS,
-  path: 'css',
+  title: "Odin Project",
+  iconComponent: <FaBook className="icon-group odin" />,
+  lessonImage: Odin,
+  path: 'odin',
   description: `
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    Iusto, ullam accusamus maxime aspernatur ipsum distinctio 
-    tenetur cumque vero exercitationem qupathem veniam placeat 
-    doloribus quibusdam nobis eos recusandae quo esse illo qui
-     quae commodi laudantium necessitatibus vitae repudiandae. 
-     Atque architecto accusamus, itaque recusandae facere harum 
-     quaerat dolores consequuntur quas? Hic, vel.
+    Odin loyihasi ochiq kodli, eng yaxshi ochiq manbalardan foydalanib tuzilganligi
+    va minglab insonlar uni doimiy boyitib borishganlari uchun ham eng mukammal kurslardan
+    biri hisoblanadi. Bu kursda asosiy urg'u sizni mukammal dasturchi qilib tayyorlash.
+    Qolaversa, siz bu yerda yo JavaScript yoki Ruby yo'nalishini tanlab, o'z bilimingizni
+    boyitishingiz mumkin.
   `,
+  url: 'https://www.theodinproject.com/',
  }
  
   // css: {
@@ -260,7 +257,7 @@ export const lessonsData: LessonType[]  = [
 export const roadmapData = [
   {
     title: "Chapter 1",
-    iconComponent: <FaLinux className="image-box-solid-icon" />,
+    iconComponent: <FaFlagCheckered className="image-box-solid-icon" />,
     children: lessonsData
     // [
     //   [lessonsData.html],
