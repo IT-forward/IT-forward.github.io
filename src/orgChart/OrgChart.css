@@ -1,4 +1,4 @@
-.image {
+.org-chart-tree .image {
   width: 100px;
   height: 100px;
   display: block;
@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-.branch-box {
+.org-chart-tree .branch-box {
   background: #ece9e6;
   background: -webkit-linear-gradient(to bottom, #ffffff, #ece9e6);
   background: linear-gradient(to bottom, #ffffff, #ece9e6);
@@ -17,4 +17,8 @@
   border-radius: 5px;
   width: 200px;
   color: rgb(83, 88, 88);
+}
+
+.org-chart-tree a:hover {
+  text-decoration: none;
 }

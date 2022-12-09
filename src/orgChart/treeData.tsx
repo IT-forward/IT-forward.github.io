@@ -3,6 +3,7 @@ import otabek from "./images/otabek.png";
 import eldor from "./images/eldor.png";
 import husan from "./images/husan.png";
 import oybek from "./images/oybek.png";
+import khayitbek from "./images/khayitbek.jpg";
 import man from "./images/man.jpg";
 import woman from "./images/woman.jpg";
 import "./OrgChart.css";
@@ -46,7 +47,7 @@ export const treeData = {
     {
       id: 7,
       fullName: "Hayitbek Mirsoatov",
-      image: man,
+      image: khayitbek,
       finished: false,
     },
     {
